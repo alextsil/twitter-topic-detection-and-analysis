@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  17 APR 2017 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  17 APR 2017 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,13 +343,7 @@ File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 254.
-
-Underfull \hbox (badness 1360) in paragraph at lines 279--279
-[][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
-m/n/9 and \T1/aett/m/n/9 \alig-nau-
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2]
@@ -361,14 +355,14 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 473.
+(epstopdf)             \includegraphics on input line 449.
 Package epstopdf Info: Output file is already uptodate.
 
 <fly-eps-converted-to.pdf, id=29, 34.1275pt x 32.12pt>
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 473.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 449.
 (pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
 Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    date: 2015-09-14 19:46:22
@@ -378,16 +372,16 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 479.
+(epstopdf)             \includegraphics on input line 455.
 Package epstopdf Info: Output file is already uptodate.
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
  <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 479.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 455.
 (pdftex.def)             Requested size: 72.27492pt x 72.27565pt.
 
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 481.
+(Font)              using `T1/aett/m/n' instead on input line 457.
 
 Package epstopdf Info: Source file: <flies.eps>
 (epstopdf)                    date: 2015-09-14 19:46:16
@@ -397,13 +391,13 @@ Package epstopdf Info: Source file: <flies.eps>
 (epstopdf)                    size: 9687 bytes
 (epstopdf)             Command: <repstopdf --outfile=flies-eps-converted-to.pdf
  flies.eps>
-(epstopdf)             \includegraphics on input line 494.
+(epstopdf)             \includegraphics on input line 470.
 Package epstopdf Info: Output file is already uptodate.
 <flies-eps-converted-to.pdf, id=30, 307.1475pt x 114.4275pt>
 File: flies-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flies-eps-converted-to.pdf>
-Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 494.
+Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 470.
 (pdftex.def)             Requested size: 307.14674pt x 114.42722pt.
 Package epstopdf Info: Source file: <rosette.eps>
 (epstopdf)                    date: 2015-09-14 19:46:26
@@ -413,19 +407,19 @@ Package epstopdf Info: Source file: <rosette.eps>
 (epstopdf)                    size: 2931 bytes
 (epstopdf)             Command: <repstopdf --outfile=rosette-eps-converted-to.p
 df rosette.eps>
-(epstopdf)             \includegraphics on input line 502.
+(epstopdf)             \includegraphics on input line 478.
 Package epstopdf Info: Output file is already uptodate.
 
 <rosette-eps-converted-to.pdf, id=31, 364.59212pt x 364.59212pt>
 File: rosette-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rosette-eps-converted-to.pdf>
-Package pdftex.def Info: rosette-eps-converted-to.pdf used on input line 502.
+Package pdftex.def Info: rosette-eps-converted-to.pdf used on input line 478.
 (pdftex.def)             Requested size: 72.26622pt x 72.26622pt.
 \c@theorem=\count117
 \c@definition=\count118
 
-Overfull \hbox (15.60826pt too wide) detected at line 558
+Overfull \hbox (15.60826pt too wide) detected at line 534
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
@@ -439,9 +433,7 @@ ortium.net\T1/aer/m/n/9 ).
  []
 
 [3 <./fly-eps-converted-to.pdf>]) [4 <./flies-eps-converted-to.pdf> <./rosette-
-eps-converted-to.pdf>] [5
-
-] (./sig-alternate-sample.aux)
+eps-converted-to.pdf>] (./sig-alternate-sample.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -449,11 +441,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  3299 strings out of 494953
  42389 string characters out of 6180978
- 114888 words of memory out of 5000000
+ 112888 words of memory out of 5000000
  6439 multiletter control sequences out of 15000+600000
  69653 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,12n,35p,268b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,35p,1145b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist
@@ -474,10 +466,10 @@ uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (5 pages, 261558 bytes).
+Output written on sig-alternate-sample.pdf (4 pages, 261102 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 112 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
