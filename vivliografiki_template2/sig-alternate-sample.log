@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  18 APR 2017 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  19 APR 2017 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,7 +347,7 @@ LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
 
 
 ]
-Underfull \vbox (badness 1221) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 Package epstopdf Info: Source file: <fly.eps>
@@ -358,14 +358,14 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 459.
+(epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
 
-<fly-eps-converted-to.pdf, id=29, 34.1275pt x 32.12pt>
+<fly-eps-converted-to.pdf, id=28, 34.1275pt x 32.12pt>
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 459.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 460.
 (pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
 Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    date: 2015-09-14 19:46:22
@@ -375,16 +375,16 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 465.
+(epstopdf)             \includegraphics on input line 466.
 Package epstopdf Info: Output file is already uptodate.
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
  <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 465.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 466.
 (pdftex.def)             Requested size: 72.27492pt x 72.27565pt.
 
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 467.
+(Font)              using `T1/aett/m/n' instead on input line 468.
 
 Package epstopdf Info: Source file: <flies.eps>
 (epstopdf)                    date: 2015-09-14 19:46:16
@@ -394,13 +394,13 @@ Package epstopdf Info: Source file: <flies.eps>
 (epstopdf)                    size: 9687 bytes
 (epstopdf)             Command: <repstopdf --outfile=flies-eps-converted-to.pdf
  flies.eps>
-(epstopdf)             \includegraphics on input line 480.
+(epstopdf)             \includegraphics on input line 481.
 Package epstopdf Info: Output file is already uptodate.
-<flies-eps-converted-to.pdf, id=30, 307.1475pt x 114.4275pt>
+<flies-eps-converted-to.pdf, id=29, 307.1475pt x 114.4275pt>
 File: flies-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flies-eps-converted-to.pdf>
-Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 480.
+Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 481.
 (pdftex.def)             Requested size: 307.14674pt x 114.42722pt.
 Package epstopdf Info: Source file: <rosette.eps>
 (epstopdf)                    date: 2015-09-14 19:46:26
@@ -410,34 +410,32 @@ Package epstopdf Info: Source file: <rosette.eps>
 (epstopdf)                    size: 2931 bytes
 (epstopdf)             Command: <repstopdf --outfile=rosette-eps-converted-to.p
 df rosette.eps>
-(epstopdf)             \includegraphics on input line 488.
+(epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
 
-<rosette-eps-converted-to.pdf, id=31, 364.59212pt x 364.59212pt>
+<rosette-eps-converted-to.pdf, id=30, 364.59212pt x 364.59212pt>
 File: rosette-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rosette-eps-converted-to.pdf>
-Package pdftex.def Info: rosette-eps-converted-to.pdf used on input line 488.
+Package pdftex.def Info: rosette-eps-converted-to.pdf used on input line 489.
 (pdftex.def)             Requested size: 72.26622pt x 72.26622pt.
 \c@theorem=\count117
 \c@definition=\count118
-
-Overfull \hbox (15.60826pt too wide) detected at line 544
+ [3 <./fly-eps-converted-to.pdf>]
+Overfull \hbox (15.60826pt too wide) detected at line 545
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
 sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
  []
 
-[3 <./fly-eps-converted-to.pdf>] (./sig-alternate-sample.bbl
+(./sig-alternate-sample.bbl
 Overfull \hbox (21.02989pt too wide) in paragraph at lines 1--1
 \T1/aer/m/n/9 (The Kumquat Con-sor-tium, email: \T1/aett/bx/n/9 jp-kumquat@cons
 ortium.net\T1/aer/m/n/9 ). 
  []
 
-) [4 <./flies-eps-converted-to.pdf> <./rosette-eps-converted-to.pdf>] [5
-
-]
+[4 <./flies-eps-converted-to.pdf> <./rosette-eps-converted-to.pdf>]) [5]
 (./sig-alternate-sample.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -446,7 +444,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  3299 strings out of 494953
  42389 string characters out of 6180978
- 113888 words of memory out of 5000000
+ 112888 words of memory out of 5000000
  6439 multiletter control sequences out of 15000+600000
  69653 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -471,7 +469,7 @@ uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (5 pages, 264957 bytes).
+Output written on sig-alternate-sample.pdf (5 pages, 265957 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
