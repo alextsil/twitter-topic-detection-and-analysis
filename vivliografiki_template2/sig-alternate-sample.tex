@@ -271,6 +271,13 @@ The reason why we present methods of identifying the place where a user sends th
 
 The computational treatment of opinion, sentiment, and subjectivity has recently attracted a great deal of attention, in part because of its potential applications. One of the main reasons for sentiment analysis is the aforementioned increase of user-generated content on the Web which has resulted in a wealth of information that is potentially of vital importance to institutions and companies. Typically, document-based sentiment analysis processes operate at a particular level, i.e. at the word or sentence level, for extracting a document's sentiment. In machine learning, the most popular approach for sentiment analysis, the selection of appropriate features for representing a document is crucial. In sentiment identification at the word level different types of features have been introduced, which are either sentiment-based (e.g. words which express a specific sentiment), syntactic-based (e.g. part-of-speech and n-grams), or semantic-based (e.g. semantic word vector spaces which capture the meaning of each word).
 
+Document-level polarity classification is not a special case of text categorization with sentiment -rather than topic- based categories. Hence, standard machine learning classification techniques, such as support vector machines (SVMs), can be applied to the entire documents themselves. Nevertherless, some researches presented a technique that it is easy to improve the accuracy, by integrating sentence-level subjectivity detection with document-level sentiment polarity.
+
+As we know, in the machine learning approach, each classifier is
+trained using a collection of representative data. In contrast, the semantic-orientation approach does not require prior training;
+instead, it measures a word containing positive or negative sentiment. Each approach has its own benefits and drawbacks. For
+example, the machine learning approach tends to be more accurate, but the semantic-orientation approach has better generality. In [...] it is presented a new lexicon-enhanced method to generate a set of sentiment words based on a sentiment lexicon as a new feature dimension. It is combined these sentiment features with content-free and content-specific features used in the existing machine-learning approach. In the evaluation stage, they showed that adding the new set of sentiment features can increase sentiment-classification performance.
+
 
 \section{The {\secit Body} of The Paper}
 Typically, the body of a paper is organized
