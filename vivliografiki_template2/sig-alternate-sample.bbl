@@ -1,35 +1,194 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
+\bibitem{abdelhaq2013eventweet}
+H.~Abdelhaq, C.~Sengstock, and M.~Gertz.
+\newblock Eventweet: Online localized event detection from twitter.
+\newblock {\em Proceedings of the VLDB Endowment}, 6(12):1326--1329, 2013.
 
-\bibitem{braams:babel}
-J.~Braams.
-\newblock Babel, a multilingual style-option system for use with latex's
-  standard document styles.
-\newblock {\em TUGboat}, 12(2):291--301, June 1991.
+\bibitem{backstrom2010find}
+L.~Backstrom, E.~Sun, and C.~Marlow.
+\newblock Find me if you can: improving geographical prediction with social and
+  spatial proximity.
+\newblock In {\em Proceedings of the 19th international conference on World
+  wide web}, pages 61--70. ACM, 2010.
 
-\bibitem{clark:pct}
-M.~Clark.
-\newblock Post congress tristesse.
-\newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
-  March 1991.
+\bibitem{budak2011structural}
+C.~Budak, D.~Agrawal, and A.~El~Abbadi.
+\newblock Structural trend analysis for online social networks.
+\newblock {\em Proceedings of the VLDB Endowment}, 4(10):646--656, 2011.
 
-\bibitem{herlihy:methodology}
-M.~Herlihy.
-\newblock A methodology for implementing highly concurrent data objects.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
+\bibitem{cataldi2013personalized}
+M.~Cataldi, L.~D. Caro, and C.~Schifanella.
+\newblock Personalized emerging topic detection based on a term aging model.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  5(1):7, 2013.
 
-\bibitem{Lamport:LaTeX}
-L.~Lamport.
-\newblock {\em LaTeX User's Guide and Document Reference Manual}.
-\newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
+\bibitem{chatzakou2013micro}
+D.~Chatzakou, V.~Koutsonikola, A.~Vakali, and K.~Kafetsios.
+\newblock Micro-blogging content analysis via emotionally-driven clustering.
+\newblock In {\em Affective Computing and Intelligent Interaction (ACII), 2013
+  Humaine Association Conference on}, pages 375--380. IEEE, 2013.
 
-\bibitem{salas:calculus}
-S.~Salas and E.~Hille.
-\newblock {\em Calculus: One and Several Variable}.
-\newblock John Wiley and Sons, New York, 1978.
+\bibitem{chatzakou2015multispot}
+D.~Chatzakou, N.~Passalis, and A.~Vakali.
+\newblock Multispot: Spotting sentiments with semantic aware multilevel
+  cascaded analysis.
+\newblock In {\em International Conference on Big Data Analytics and Knowledge
+  Discovery}, pages 337--350. Springer, 2015.
+
+\bibitem{cheng2010you}
+Z.~Cheng, J.~Caverlee, and K.~Lee.
+\newblock You are where you tweet: a content-based approach to geo-locating
+  twitter users.
+\newblock In {\em Proceedings of the 19th ACM international conference on
+  Information and knowledge management}, pages 759--768. ACM, 2010.
+
+\bibitem{compton2014geotagging}
+R.~Compton, D.~Jurgens, and D.~Allen.
+\newblock Geotagging one hundred million twitter accounts with total variation
+  minimization.
+\newblock In {\em Big Data (Big Data), 2014 IEEE International Conference on},
+  pages 393--401. IEEE, 2014.
+
+\bibitem{dang2010lexicon}
+Y.~Dang, Y.~Zhang, and H.~Chen.
+\newblock A lexicon-enhanced method for sentiment classification: An experiment
+  on online product reviews.
+\newblock {\em IEEE Intelligent Systems}, 25(4):46--53, 2010.
+
+\bibitem{desai2016techniques}
+M.~Desai and M.~A. Mehta.
+\newblock Techniques for sentiment analysis of twitter data: A comprehensive
+  survey.
+\newblock In {\em Computing, Communication and Automation (ICCCA), 2016
+  International Conference on}, pages 149--154. IEEE, 2016.
+
+\bibitem{dos2014deep}
+C.~N. Dos~Santos and M.~Gatti.
+\newblock Deep convolutional neural networks for sentiment analysis of short
+  texts.
+\newblock In {\em COLING}, pages 69--78, 2014.
+
+\bibitem{gao2013sequential}
+D.~Gao, W.~Li, and R.~Zhang.
+\newblock Sequential summarization: A new application for timely updated
+  twitter trending topics.
+\newblock In {\em ACL (2)}, pages 567--571. Citeseer, 2013.
+
+\bibitem{giachanou2016like}
+A.~Giachanou and F.~Crestani.
+\newblock Like it or not: A survey of twitter sentiment analysis methods.
+\newblock {\em ACM Computing Surveys (CSUR)}, 49(2):28, 2016.
+
+\bibitem{hua2013sted}
+T.~Hua, F.~Chen, L.~Zhao, C.-T. Lu, and N.~Ramakrishnan.
+\newblock Sted: Semi-supervised targeted event detection.
+\newblock {\em KDD'13}, pages 11--14, 2013.
+
+\bibitem{jurgens2015geolocation}
+D.~Jurgens, T.~Finethy, J.~McCorriston, Y.~T. Xu, and D.~Ruths.
+\newblock Geolocation prediction in twitter using social networks: A critical
+  analysis and review of current practice.
+\newblock In {\em ICWSM}, pages 188--197, 2015.
+
+\bibitem{kharde2016sentiment}
+V.~Kharde, P.~Sonawane, et~al.
+\newblock Sentiment analysis of twitter data: A survey of techniques.
+\newblock {\em arXiv preprint arXiv:1601.06971}, 2016.
+
+\bibitem{kong2014spot}
+L.~Kong, Z.~Liu, and Y.~Huang.
+\newblock Spot: Locating social media users based on social network context.
+\newblock {\em Proceedings of the VLDB Endowment}, 7(13):1681--1684, 2014.
+
+\bibitem{li2012twiner}
+C.~Li, J.~Weng, Q.~He, Y.~Yao, A.~Datta, A.~Sun, and B.-S. Lee.
+\newblock Twiner: named entity recognition in targeted twitter stream.
+\newblock In {\em Proceedings of the 35th international ACM SIGIR conference on
+  Research and development in information retrieval}, pages 721--730. ACM,
+  2012.
+
+\bibitem{mahmud2012tweet}
+J.~Mahmud, J.~Nichols, and C.~Drews.
+\newblock Where is this tweet from? inferring home locations of twitter users.
+\newblock {\em ICWSM}, 12:511--514, 2012.
+
+\bibitem{mckelvey2013truthy}
+K.~R. McKelvey and F.~Menczer.
+\newblock Truthy: Enabling the study of online social networks.
+\newblock In {\em Proceedings of the 2013 conference on Computer supported
+  cooperative work companion}, pages 23--26. ACM, 2013.
+
+\bibitem{mikolov2013distributed}
+T.~Mikolov, I.~Sutskever, K.~Chen, G.~S. Corrado, and J.~Dean.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In {\em Advances in neural information processing systems}, pages
+  3111--3119, 2013.
+
+\bibitem{paltoglou2012twitter}
+G.~Paltoglou and M.~Thelwall.
+\newblock Twitter, myspace, digg: Unsupervised sentiment analysis in social
+  media.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  3(4):66, 2012.
+
+\bibitem{pang2004sentimental}
+B.~Pang and L.~Lee.
+\newblock A sentimental education: Sentiment analysis using subjectivity
+  summarization based on minimum cuts.
+\newblock In {\em Proceedings of the 42nd annual meeting on Association for
+  Computational Linguistics}, page 271. Association for Computational
+  Linguistics, 2004.
+
+\bibitem{petrovic2010streaming}
+S.~Petrovi{\'c}, M.~Osborne, and V.~Lavrenko.
+\newblock Streaming first story detection with application to twitter.
+\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  pages 181--189. Association for Computational Linguistics, 2010.
+
+\bibitem{Sankaranarayanan2009TwitterStandNI}
+J.~Sankaranarayanan, H.~Samet, B.~E. Teitler, M.~D. Lieberman, and J.~Sperling.
+\newblock Twitterstand: news in tweets.
+\newblock In {\em GIS}, 2009.
+
+\bibitem{sayyadigraph}
+H.~Sayyadi and L.~Rschid.
+\newblock A graph analytical approach for fast topic detection.
+
+\bibitem{severyn2015unitn}
+A.~Severyn and A.~Moschitti.
+\newblock Unitn: Training deep convolutional neural network for twitter
+  sentiment classification.
+\newblock In {\em Proceedings of the 9th International Workshop on Semantic
+  Evaluation (SemEval 2015), Association for Computational Linguistics, Denver,
+  Colorado}, pages 464--469, 2015.
+
+\bibitem{socher2011semi}
+R.~Socher, J.~Pennington, E.~H. Huang, A.~Y. Ng, and C.~D. Manning.
+\newblock Semi-supervised recursive autoencoders for predicting sentiment
+  distributions.
+\newblock In {\em Proceedings of the conference on empirical methods in natural
+  language processing}, pages 151--161. Association for Computational
+  Linguistics, 2011.
+
+\bibitem{suen2013nifty}
+C.~Suen, S.~Huang, C.~Eksombatchai, R.~Sosic, and J.~Leskovec.
+\newblock Nifty: a system for large scale information flow tracking and
+  clustering.
+\newblock In {\em Proceedings of the 22nd international conference on World
+  Wide Web}, pages 1237--1248. ACM, 2013.
+
+\bibitem{tang2014learning}
+D.~Tang, F.~Wei, N.~Yang, M.~Zhou, T.~Liu, and B.~Qin.
+\newblock Learning sentiment-specific word embedding for twitter sentiment
+  classification.
+\newblock In {\em ACL (1)}, pages 1555--1565, 2014.
+
+\bibitem{weng2011event}
+J.~Weng and B.-S. Lee.
+\newblock Event detection in twitter.
+\newblock {\em ICWSM}, 11:401--408, 2011.
 
 \end{thebibliography}
