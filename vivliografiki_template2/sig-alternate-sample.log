@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  21 APR 2017 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  7 MAY 2017 00:06
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -320,23 +320,15 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 185.
 (C:\miktex\tex\latex\ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 186--195
-\T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
-[]$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
- []
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 233.
 
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 254.
-
-(C:\miktex\tex\latex\ae\omsaer.fd
+ (C:\miktex\tex\latex\ae\omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 254.
- [1{C:/Users/Alexei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
 
-
-]
-Overfull \hbox (3.10374pt too wide) in paragraph at lines 270--271
+Overfull \hbox (3.10374pt too wide) in paragraph at lines 249--250
 []\T1/aer/m/n/9 Twitter pro-motes an at-trac-tive style stat-ing break-ing news
 ,
  []
@@ -344,182 +336,47 @@ Overfull \hbox (3.10374pt too wide) in paragraph at lines 270--271
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [1{C:/Users/Alexei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 340.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 355.
-
-
-LaTeX Warning: Citation `bowman:reasoning' on page \thepage  undefined on input
- line 382.
-
-
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 3
-82.
-
-
-LaTeX Warning: Citation `braams:babel' on page \thepage  undefined on input lin
-e 382.
-
-
-LaTeX Warning: Citation `herlihy:methodology' on page \thepage  undefined on in
-put line 382.
-
-
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 3
-83.
-
-
-LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 384.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 384.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 390.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 401.
-
-[3]
-Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 155104 bytes
-(epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 4243 bytes
-(epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
-y.eps>
-(epstopdf)             \includegraphics on input line 478.
-Package epstopdf Info: Output file is already uptodate.
- <fly-eps-converted-to.pdf, id=31, 34.1275pt x 32.12pt>
-File: fly-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 478.
-(pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
-Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 155104 bytes
-(epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 4243 bytes
-(epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
-y.eps>
-(epstopdf)             \includegraphics on input line 484.
-Package epstopdf Info: Output file is already uptodate.
-File: fly-eps-converted-to.pdf Graphic file (type pdf)
- <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 484.
-(pdftex.def)             Requested size: 72.27492pt x 72.27565pt.
-
-
-LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 486.
-
-Package epstopdf Info: Source file: <flies.eps>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 343737 bytes
-(epstopdf)             Output file: <flies-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 9687 bytes
-(epstopdf)             Command: <epstopdf --outfile=flies-eps-converted-to.pdf 
-flies.eps>
-(epstopdf)             \includegraphics on input line 499.
-Package epstopdf Info: Output file is already uptodate.
-<flies-eps-converted-to.pdf, id=32, 307.1475pt x 114.4275pt>
-File: flies-eps-converted-to.pdf Graphic file (type pdf)
-
-<use flies-eps-converted-to.pdf>
-Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 499.
-(pdftex.def)             Requested size: 307.14674pt x 114.42722pt.
-Package epstopdf Info: Source file: <rosette.eps>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 3502 bytes
-(epstopdf)             Output file: <rosette-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-21 20:59:03
-(epstopdf)                    size: 2931 bytes
-(epstopdf)             Command: <epstopdf --outfile=rosette-eps-converted-to.pd
-f rosette.eps>
-(epstopdf)             \includegraphics on input line 507.
-Package epstopdf Info: Output file is already uptodate.
-
-<rosette-eps-converted-to.pdf, id=33, 364.59212pt x 364.59212pt>
-File: rosette-eps-converted-to.pdf Graphic file (type pdf)
-
-<use rosette-eps-converted-to.pdf>
-Package pdftex.def Info: rosette-eps-converted-to.pdf used on input line 507.
-(pdftex.def)             Requested size: 72.26622pt x 72.26622pt.
-\c@theorem=\count117
-\c@definition=\count118
-
-Overfull \hbox (15.60826pt too wide) detected at line 563
-\OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
-/m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
-m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9  [] [] \OT1/cmr/m/n/9 = 0 \OMS/cmsy
-/m/n/9  \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
- []
-
-
-LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 573.
-
-[4 <./fly-eps-converted-to.pdf>] (sig-alternate-sample.bbl
+(sig-alternate-sample.bbl
 Overfull \hbox (21.02989pt too wide) in paragraph at lines 1--1
-\T1/aer/m/n/9 (The Kumquat Con-sor-tium, email: \T1/aett/bx/n/9 jp-kumquat@cons
-ortium.net\T1/aer/m/n/9 ). 
+\T1/aer/m/n/9 (The Kumquat Con-sor-tium, email: \T1/aett/m/n/9 jp-kumquat@conso
+rtium.net\T1/aer/m/n/9 ). 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./flies-eps-converted-to.pdf> <./rosette-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [6]
-[7
-
-] (sig-alternate-sample.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+ [3])
+[4] (sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3337 strings out of 493333
- 41023 string characters out of 3146976
- 118670 words of memory out of 3000000
- 6723 multiletter control sequences out of 15000+200000
- 69653 words of font info for 98 fonts, out of 3000000 for 9000
+ 3279 strings out of 493333
+ 40249 string characters out of 3146976
+ 116670 words of memory out of 3000000
+ 6688 multiletter control sequences out of 15000+200000
+ 64525 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,37p,1087b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/miktex/fonts/enc/dvips/base/8r.enc}<C:/miktex/fonts/type1/public/amsfonts
-/cm/cmbx9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/miktex/
-fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/miktex/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/mikt
-ex/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/miktex/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/miktex/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/miktex/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/miktex/font
-s/type1/public/amsfonts/cm/cmti7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/
-cmti9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/miktex/fonts/
-type1/urw/helvetic/uhvb8a.pfb><C:/miktex/fonts/type1/urw/helvetic/uhvbo8a.pfb><
-C:/miktex/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/miktex/fonts/type1/urw/times/
-utmb8a.pfb><C:/miktex/fonts/type1/urw/times/utmbi8a.pfb><C:/miktex/fonts/type1/
-urw/times/utmr8a.pfb><C:/miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (7 pages, 297611 bytes).
+{C:/miktex/fonts/enc/dvips/base/8r.enc}<C:/mikt
+ex/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/miktex/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/miktex
+/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/miktex/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/miktex/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/miktex/fonts/
+type1/public/amsfonts/cm/cmti9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cm
+tt9.pfb><C:/miktex/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/miktex/fonts/type1/u
+rw/helvetic/uhvbo8a.pfb><C:/miktex/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/mikt
+ex/fonts/type1/urw/times/utmb8a.pfb><C:/miktex/fonts/type1/urw/times/utmr8a.pfb
+><C:/miktex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sig-alternate-sample.pdf (4 pages, 223657 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
