@@ -274,6 +274,16 @@ Given a series of twitter posts, the goal of event detection is to extract a par
 \par
 The conventional approach for this problem is to represent the documents as term frequency vectors \cite{petrovic2010streaming}. When a new document arrives, it is compared to all previous ones, and if its similarity to a specific document called "centroid" is below a threshold, the new document is registered as a new event \cite{petrovic2010streaming}. Unfortunately, this simple approach doesn't perform well as the dimensionality of the data expands. 
 \par
+Twitter's users usually tweet about their personal life, personal opinions, taste in music etc., which makes the majority of tweets unsuitable for our purpose. Although, when a noteworthy event occurs, a lot of users tweet about it. The goal of event detection is to detect these events in an automatic fashion, keeping the noise (tweets that are not events) as low as possible \cite{petrovic2010streaming}.
+\subsection{Strategies for event detection?}
+As stated before, tweets stream in high rates and capture the pulse of the moment, therefore occupying us to process them right away \cite{Sankaranarayanan2009TwitterStandNI}. This is accomplished by using algorithms that are online in nature, meaning they can on inputs that are not known beforehand\cite{Sankaranarayanan2009TwitterStandNI}.
+\par
+Tweets are inherently noisy since most of them concern small user groups. In order to improve the results of event detection we first have to improve the input by extracting only useful information from noise \cite{Sankaranarayanan2009TwitterStandNI}. Even then, information that concerns us is still limited by the upper character limit set for each tweet, currently at 140 characters. Bad use of language, spelling errors and special puns also negatively affect the outcome of event detection.
+\par
+Twitter is an evolving platform where users come and go, and become friends and followers with each other. When designing event detection algorithms, one should keep in mind the above aspects and make the algorithms adapt well to new knowledge, otherwise watch them fail as time passes \cite{Sankaranarayanan2009TwitterStandNI}.
+
+
+
 
 
 
