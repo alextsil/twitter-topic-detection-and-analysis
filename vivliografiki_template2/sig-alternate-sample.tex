@@ -281,14 +281,14 @@ As stated before, tweets stream in high rates and capture the pulse of the momen
 Tweets are inherently noisy since most of them concern small user groups. In order to improve the results of event detection we first have to improve the input by extracting only useful information from noise \cite{Sankaranarayanan2009TwitterStandNI}. Even then, information that concerns us is still limited by the upper character limit set for each tweet, currently at 140 characters. Bad use of language, spelling errors and special puns also negatively affect the outcome of event detection.
 \par
 Twitter is an evolving platform where users come and go, and become friends and followers with each other. When designing event detection algorithms, one should keep in mind the above aspects and make the algorithms adapt well to new knowledge, otherwise watch them fail as time passes \cite{Sankaranarayanan2009TwitterStandNI}.
+\subsubsection{Identifying users?}
+An approach to event detection is the identification of users that usually tweet about news \cite{Sankaranarayanan2009TwitterStandNI}. A technique to do this is to manually identify these users by looking for the most common set of followers among them \cite{Sankaranarayanan2009TwitterStandNI}.
+Another technique to do this is to assume that a user with a high amount of followers represents an influential event source into a social community \cite{cataldi2013personalized}. The added benefit of this method is that, not only we identify the users of interest but, we get an evaluation of a user's influence, meaning that an influential user can affect other users' tweet streams \cite{cataldi2013personalized}. This technique cascades as the follow-like relationships spread, making it comparable to the PageRank algorithm \cite{cataldi2013personalized}. An interesting fact to support the above claims is that studies have shown that 10\% of Twitter's users are responsible for 90\% of the tweets \cite{Sankaranarayanan2009TwitterStandNI}.
 
 
 
 
 
-
--------------
-Merikoi users postaroun sixna news. Oi followers sinithos einai akiroi. -> Ara psaxnw to "Most common set of followers among them", me th logiki oti xrhstes pou endiaferontai gia nea, pithano na kanoun follow parapanw apo 1 atoma pou postaroun nea. ref2
 
 
 
