@@ -268,7 +268,28 @@ An interesting fact to support the above claims is that studies have shown that 
 
 \subsection{Term and Topic Extraction}
 Although manual techniques exists, we will solely focus on automatic extraction techniques as they fit best on the Twitter paradigm. Filtering could be applied on all tweets, expect those posted by influential users that usually post news, leaving us with a guaranteed source of news. The goal of the extraction is to find a way to distinguish tweets that are clearly not news, and not completely eliminate the noise, which is an enormous task to take on \cite{Sankaranarayanan2009TwitterStandNI}. For the above task, \cite{Sankaranarayanan2009TwitterStandNI} used a naive Bayes classifier that was trained using tweets that were marked as news or not news.
+\subsubsection{Setting a threshold for term extraction}
+An approach to selecting emerging terms relies on a user-specified threshold parameter, as described by \cite{cataldi2013personalized}. It is assumed that, given two keywords that are likely to be news, they can be considered as such based on user evaluation. A threshold value called critical drop is introduced, which allows the user to decide when a term is news or not.
 
+\begin{figure}
+	\includegraphics[scale=0.78]{criticaldrop}
+	\centering
+	\caption{The critical drop cut-off: the maximum drop is the highest variation in the ordered list of weights
+		(red mark). The average drop (between consecutive entities) is the average difference between those items
+		that are ranked before the identified maximum drop point (yellow mark). The first drop which is higher than
+		the computed average drop is called the critical drop (green mark). Figure also taken from \cite{cataldi2013personalized}.}
+	\label{fig:criticaldrop}
+\end{figure}
+
+In order for the above technique to work, a proper drop value has to be set. This a be a daunting task for a user or a machine. The difficulty lies in the fact that it's difficult to quantify a threshold given an abstract context that is, on top of other things, unstable. An automatic way of doing this, as described by \cite{cataldi2013personalized}, is shown below: The main idea is to preserve terms with high frequencies but only consider those whose frequency is higher than the average frequencies of most discussed terms. A model is introduced that works as follows:
+\begin{itemize}
+	\item Terms are ranked in descending order based on their frequencies
+	\item The maximum drop value between consecutive entries is calculated and the drop point is identified.
+	\item The average drop between consecutive entities for all those keywords that are ranked before the identified maximum drop point is calculated.
+	\item The first drop which is higher than the computed average drop is identified as the critical drop.
+\end{itemize}
+
+At the end of this procedure, the terms ranked before the critical drop are defined as news on the specified time interval.
 
 
 \section{Conclusions}
