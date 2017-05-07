@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  7 MAY 2017 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  7 MAY 2017 13:17
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -350,12 +350,11 @@ File: criticaldrop.png Graphic file (type png)
 Package pdftex.def Info: criticaldrop.png used on input line 275.
 (pdftex.def)             Requested size: 211.38889pt x 203.16821pt.
 
-[3 <./obama.png>] (sig-alternate-sample.bbl
+[3 <./obama.png>] (sig-alternate-sample.bbl [4 <./criticaldrop.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./criticaldrop.png>]) [5
-
-] (sig-alternate-sample.aux) ) 
+) [5]
+(sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
  3277 strings out of 493333
  40216 string characters out of 3146976
@@ -363,19 +362,19 @@ Here is how much of TeX's memory you used:
  6686 multiletter control sequences out of 15000+200000
  64525 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,37p,1087b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/miktex/fonts/enc/dvips/base/8r.enc}<C:/miktex
-/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/miktex/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/miktex/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm
-/cmr9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/miktex/fonts/
-type1/public/amsfonts/cm/cmti7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cm
-ti9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/miktex/fonts/ty
-pe1/urw/helvetic/uhvb8a.pfb><C:/miktex/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:
-/miktex/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/miktex/fonts/type1/urw/times/ut
-mb8a.pfb><C:/miktex/fonts/type1/urw/times/utmr8a.pfb><C:/miktex/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (5 pages, 281737 bytes).
+ 41i,12n,37p,1199b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/miktex/fonts/enc/dvips/base/8r.enc}<C:/miktex/f
+onts/type1/public/amsfonts/cm/cmbx9.pfb><C:/miktex/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/miktex/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/c
+mr9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/miktex/fonts/ty
+pe1/public/amsfonts/cm/cmti7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti
+9.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/miktex/fonts/type
+1/urw/helvetic/uhvb8a.pfb><C:/miktex/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/m
+iktex/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/miktex/fonts/type1/urw/times/utmb
+8a.pfb><C:/miktex/fonts/type1/urw/times/utmr8a.pfb><C:/miktex/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on sig-alternate-sample.pdf (5 pages, 285289 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
