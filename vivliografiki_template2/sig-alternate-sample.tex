@@ -153,7 +153,7 @@ one who did all the really hard work.}\\
 
 \maketitle
 \begin{abstract}
-todo
+todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo todo (200 kai kati lekseis - gia na kseroume poso xoro pianei)
 \end{abstract}
 
 
@@ -245,26 +245,33 @@ Given a series of twitter posts, the goal of event detection is to extract a par
 The conventional approach for this problem is to represent the documents as term frequency vectors \cite{petrovic2010streaming}. When a new document arrives, it is compared to all previous ones, and if its similarity to a specific document called "centroid" is below a threshold, the new document is registered as a new event \cite{petrovic2010streaming}. Unfortunately, this simple approach doesn't perform well as the dimensionality of the data expands. 
 \par
 Twitter's users usually tweet about their personal life, personal opinions, taste in music etc., which makes the majority of tweets unsuitable for our purpose. Although, when a noteworthy event occurs, a lot of users tweet about it. The goal of event detection is to detect these events in an automatic fashion, keeping the noise (tweets that are not events) as low as possible \cite{petrovic2010streaming}.
-\subsection{Strategies for event detection?}
+\subsection{Strategies for event detection}
 As stated before, tweets stream in high rates and capture the pulse of the moment, therefore occupying us to process them right away \cite{Sankaranarayanan2009TwitterStandNI}. This is accomplished by using algorithms that are online in nature, meaning they can on inputs that are not known beforehand\cite{Sankaranarayanan2009TwitterStandNI}.
 \par
 Tweets are inherently noisy since most of them concern small user groups. In order to improve the results of event detection we first have to improve the input by extracting only useful information from noise \cite{Sankaranarayanan2009TwitterStandNI}. Even then, information that concerns us is still limited by the upper character limit set for each tweet, currently at 140 characters. Bad use of language, spelling errors and special puns also negatively affect the outcome of event detection.
 \par
 Twitter is an evolving platform where users come and go, and become friends and followers with each other. When designing event detection algorithms, one should keep in mind the above aspects and make the algorithms adapt well to new knowledge, otherwise watch them fail as time passes \cite{Sankaranarayanan2009TwitterStandNI}.
-\subsubsection{Identifying users?}
+\par
+The difference between newswire and Tweeter is that, in Tweeter, the identities of the news "reporters" in not known in advance and the news are not posted based on a schedule, but rather appear randomly among other tweets \cite{Sankaranarayanan2009TwitterStandNI}.
+\subsubsection{Identifying users}
 An approach to event detection is the identification of users that usually tweet about news \cite{Sankaranarayanan2009TwitterStandNI}. A technique to do this is to manually identify these users by looking for the most common set of followers among them \cite{Sankaranarayanan2009TwitterStandNI}.
-Another technique to do this is to assume that a user with a high amount of followers represents an influential event source into a social community \cite{cataldi2013personalized}. As an example, we present the graph shown below, which features Barack Obama as the most influential node in this group \cite{cataldi2013personalized}.
+Another technique to do this is to assume that a user with a high amount of followers represents an influential event source into a social community \cite{cataldi2013personalized}. As an example, we present figure \ref{fig:obama} , which features Barack Obama as the most influential node in this group \cite{cataldi2013personalized}.
 
-\includegraphics[scale=0.7]{obama}
+\begin{figure}[h]
+	\includegraphics[scale=0.7]{obama}
+	\caption{Graph showing user importance on Twitter, based on the number of their followers. \cite{cataldi2013personalized}}
+	\label{fig:obama}
+\end{figure}
 
 The added benefit of this method is that, not only we identify the users of interest but, we get an evaluation of a user's influence, meaning that an influential user can affect other users' tweet streams \cite{cataldi2013personalized}. This technique cascades as the follow-like relationships spread, making it comparable to the PageRank algorithm \cite{cataldi2013personalized}.
 An interesting fact to support the above claims is that studies have shown that 10\% of Twitter's users are responsible for 90\% of the tweets \cite{Sankaranarayanan2009TwitterStandNI}.
 
--> sinexeia soon
+\subsection{Term and Topic Extraction}
+Although manual techniques exists, we will solely focus on automatic extraction techniques as they fit best on the Twitter paradigm. Filtering could be applied on all tweets, expect those posted by influential users that usually post news, leaving us with a guaranteed source of news. The goal of the extraction is to find a way to distinguish tweets that are clearly not news, and not completely eliminate the noise, which is an enormous task to take on \cite{Sankaranarayanan2009TwitterStandNI}. For the above task, \cite{Sankaranarayanan2009TwitterStandNI} used a naive Bayes classifier that was trained using tweets that were marked as news or not news.
+
 
 
 \section{Conclusions}
-
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
