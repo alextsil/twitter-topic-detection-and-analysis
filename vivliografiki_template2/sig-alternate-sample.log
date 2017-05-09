@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  9 MAY 2017 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  9 MAY 2017 20:10
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -364,58 +364,70 @@ File: sentiment-extraction.png Graphic file (type png)
 <use sentiment-extraction.png>
 Package pdftex.def Info: sentiment-extraction.png used on input line 308.
 (pdftex.def)             Requested size: 233.74336pt x 101.98135pt.
- [4 <./criticaldrop.png> <./sentiment-extraction.png>] <tokenization.png, id=33
-, 602.25pt x 91.84312pt>
+ [4 <./criticaldrop.png> <./sentiment-extraction.png>] <schema.png, id=33, 318.
+59026pt x 172.84575pt>
+File: schema.png Graphic file (type png)
+ <use schema.png>
+Package pdftex.def Info: schema.png used on input line 321.
+(pdftex.def)             Requested size: 223.01166pt x 120.99118pt.
+
+<tokenization.png, id=35, 602.25pt x 91.84312pt>
 File: tokenization.png Graphic file (type png)
  <use tokenization.png>
-Package pdftex.def Info: tokenization.png used on input line 336.
+Package pdftex.def Info: tokenization.png used on input line 347.
 (pdftex.def)             Requested size: 240.89572pt x 36.73659pt.
 
-Overfull \hbox (0.89572pt too wide) in paragraph at lines 336--338
+Overfull \hbox (0.89572pt too wide) in paragraph at lines 347--349
  [][] 
  []
 
-<lexicon-token.png, id=34, 254.75175pt x 319.1925pt>
+<lexicon-token.png, id=36, 254.75175pt x 319.1925pt>
 File: lexicon-token.png Graphic file (type png)
  <use lexicon-token.png>
-Package pdftex.def Info: lexicon-token.png used on input line 349.
+Package pdftex.def Info: lexicon-token.png used on input line 360.
 (pdftex.def)             Requested size: 152.85222pt x 191.51697pt.
 
-(sig-alternate-sample.bbl [5 <./tokenization.png> <./lexicon-token.png>]
+[5 <./schema.png> <./tokenization.png> <./lexicon-token.png>]
+Overfull \hbox (1.4477pt too wide) in paragraph at lines 390--392
+\T1/aer/m/n/9 pro-posed dif-fer-ent al-go-rithms that were com-pared to an SVM
+ []
+
+<hashtag.png, id=42, 476.53032pt x 363.60844pt>
+File: hashtag.png Graphic file (type png)
+ <use hashtag.png>
+Package pdftex.def Info: hashtag.png used on input line 394.
+(pdftex.def)             Requested size: 238.26457pt x 181.80377pt.
+
+(sig-alternate-sample.bbl [6 <./hashtag.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6])
-[7
-
-] (sig-alternate-sample.aux) ) 
+) [7]
+(sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3291 strings out of 493333
- 42392 string characters out of 3139199
- 116590 words of memory out of 3000000
- 6697 multiletter control sequences out of 15000+200000
+ 3303 strings out of 493333
+ 42560 string characters out of 3139199
+ 116606 words of memory out of 3000000
+ 6707 multiletter control sequences out of 15000+200000
  64525 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,37p,1199b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base
-/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
-8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (7 pages, 538116 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8
+r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sig-alternate-sample.pdf (7 pages, 665041 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

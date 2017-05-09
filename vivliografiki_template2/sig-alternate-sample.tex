@@ -300,7 +300,7 @@ Noise can greatly affect clustering techniques. Care should be taken when creati
 As \cite{cataldi2013personalized} states, many clustering and classification strategies cannot by applies to this task due to the fact that they tend to ignore relationships among documents(tweets) related to a news event. \cite{cataldi2013personalized} proposes a metaphor where each term is seen as a living organism: A term's vitality status increases as users use it, and slowly degrades as references drop over time. The term's vitality is weighted based on the source of the tweet. As stated before, highly influential users are more likely to post high-importance news, hence allowing us to favour terms found in their tweets.
 
 \section{Sentiment Analysis}
-Sentiment analysis (SA) can be defined as a process that automates mining of attitudes, opinions, views and emotions from text, speech, tweets and database sources through Natural Language Processing (NLP). Sentiment analysis involves classifying opinions in text into categories like "positive" or "negative" or "neutral". It's also referred as subjectivity analysis, opinion mining, and appraisal extraction. Twitter Sentiment Analysis (TSA) tackles the problem of analyzing the messages posted on Twitter in terms of the sentiments they express. Twitter is a novel domain
+Sentiment analysis (SA) can be defined as a process that automates mining of attitudes, opinions, views and emotions from text, speech, tweets and database sources through Natural Language Processing (NLP)\cite{kharde2016sentiment}. Sentiment analysis involves classifying opinions in text into categories like "positive" or "negative" or "neutral". It's also referred as subjectivity analysis, opinion mining, and appraisal extraction. Twitter Sentiment Analysis (TSA) tackles the problem of analyzing the messages posted on Twitter in terms of the sentiments they express. Twitter is a novel domain
 for SA and very challenging. One of the main challenges is the length limitation, according to which tweets can be up to 140 characters. In addition, the short length and the informal type of the medium have caused the emergence of textual informalities that are extensively encountered in Twitter. Thus, methods proposed for TSA should take into account these unique characteristics. The majority of TSA methods use a method from the field of machine learning, known
 as classifier. Figure 3 shows the most typical TSA process.
 
@@ -315,7 +315,15 @@ as classifier. Figure 3 shows the most typical TSA process.
 In the literature, SA has been applied at three different levels: \textit{document}, \textit{sentence}, and \textit{entity levels}. SA at the document level aims to identify the sentiment polarity
 expressed in the whole document. The sentence level SA aims to classify each sentence as positive or negative, whereas entity-level SA detects the sentiment polarity of a
 specific entity/target of a particular object.
-Due to the length limitation, the majority of tweets contains a single sentence. Therefore, for the task of TSA there is no fundamental difference between document and sentence level. In case of tweets, SA can be applied on two levels: \textit{message/sentence} and \textit{entity levels}. Four different classes can be identified in the literature of TSA:
+Due to the length limitation, the majority of tweets contains a single sentence. Therefore, for the task of TSA there is no fundamental difference between document and sentence level. In case of tweets, SA can be applied on two levels: \textit{message/sentence} and \textit{entity levels}.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.70]{schema}
+	\centering
+	\caption{Levels of sentiment analysis related to tweets.}
+	\label{fig:schema}
+\end{figure}
+Four different classes can be identified in the literature of TSA:
 
 \begin{itemize}
 	\item Machine Learning
@@ -329,7 +337,10 @@ The majority of the proposed methods that deal with TSA employs a classifier fro
 applied classifiers are the Naive Bayes (NB), Maximum Entropy (MaxEnt), Support Vector Machines (SVM), Multinomial Naive Bayes (MNB), Logistic Regression (LR), Random Forest (RF), and Conditional Random Field (CRF).
 \par
 \cite{tang2014learning} proposes learning \textit{sentiment specific word embedding} (SSWE) for sentiment analysis. It develops \textit{neural} networks and maps each \textit{ngram} to the sentiment polarity of sentence. This allows it to focus on learning the meaning of word, namely word embedding, from massive distant-supervised tweets by doing this from scratch. The effectiveness of SSWE has been implicitly evaluated by using it as features in sentiment classification on the benchmark dataset in \textit{SemEval 2013}, and explicitly verified by measuring word similarity
-in the embedding space for sentiment lexicons \cite{tang2014learning}. A deep learning approach that also uses neural networks is presented in \cite{severyn2015unitn}. This approach focuses on sentiment analysis on both message and phrase levels. The resulting model of this paper demonstrates state-of-the-art performance on both levels.
+in the embedding space for sentiment lexicons \cite{tang2014learning}. 
+\par
+A deep learning approach that also uses neural networks is presented in \cite{severyn2015unitn}. This approach focuses on sentiment analysis on both message and phrase levels. The resulting model of this paper demonstrates state-of-the-art performance on both levels.
+\par
 One of the most used classifiers for addressing TSA is the SVM classifier. [Bakliwal et al. 2012] employed an SVM  classifier trained on 11 features to address TSA. They employed different pre-processing techniques one by one in order to measure their effectiveness. \textit{Spelling correction}, \textit{stemming}, and \textit{stop-words removal} managed to increase the accuracy of the classifier. Two different datasets were used to evaluate their approach, the Stanford dataset [Go et al. 2009] and the Mejaj [Bora 2012]. The best results were achieved by the combination of NLP- and Twitter-specific features.
 
 \begin{figure}[h]
@@ -357,6 +368,34 @@ Another approach using a newly proposed methodology, that is lexicon-based, for 
 the emotions expressed in tweets as well as their intensity.
 
 \subsection{Hybrid}
+A number of researchers combined machine-learning and lexicon-based approaches. 
+\par
+An interesting hybrid method was presented by Ghiassi et al. [2013], who combined dynamic artificial neural network with n-gram. Emoticons and tweets that contained the word love or hate or their synonyms were used as features to build the two classifiers: SVM and a Dynamic Architecture for Artificial Neural Networks (DAN2). The proposed approach was tested on a collection of tweets crawled using the subject \textit{Justin Bieber}. The results showed that DAN2 managed to outperform SVM.
+\par
+Khuc et al. [2012] also combined a lexicon-based approach with a classifier to improve TSA accuracy. They considered the MapReduce framework to create a co-occurrence
+matrix based on bigram phrases. The cosine similarity between words is then computed and the edges with low cosine score are removed. Then, they combined the score generated using a simple lexicon-based approach with a classifier. For the machine learning algorithm, they used the Online LR approach. Their experiments showed that the hybrid approach outperformed the simple lexicon-based classifier that was only
+based on words/phrases that indicated sentiment.
+\par
+Another older interesting study was presented by Zhang et al. [2011], who proposed a hybrid method to address entity-based TSA. For each of the entities Obama, Harry Potter, Tangled, iPad, and Packers they computed a sentiment score based on their proximity to words from a sentiment lexicon. They proposed a rule-based algorithm that also considered
+\textit{comparative judgments}, \textit{negation}, and \textit{expressions} that were likely to change the orientation of a phrase. To collect more annotated data and enhance the recall of the proposed method, they identified additional subjective terms using \textit{Chi-square}. The SVM classifier was then applied for sentiment polarity detection.
+
+\subsection{Graph-Based}
+Although machine-learning methods achieve a great performance on TSA, they require a large number of annotated data. Label propagation is a method that can reduce the demand of the annotated data. For this reason, a number of researchers utilized the Twitter social graph under the assumption that people influence one another. Label propagation is a \textit{semi-supervised} method in which labels are distributed to nodes using the connection graphs.
+\par
+Some of the first to apply a label propagation method for TSA were Speriosu et al. 2011. Their proposed method leveraged the Twitter follower graph under the assumption that people influence one another. Users, tweets, unigrams, bigrams, hashtags, and emoticons were used as nodes for the construction of the graph. The proposed label propagation method outperformed a lexicon-based approach and a MaxEnt classifier.
+\par
+Cui et al. [2011] tackled TSA with a label propagation method based on analysis of emotion tokens. At first, the emotion tokens from tweets were extracted. A graph propagation method was then used to assign polarities to the tokens. In the final
+step, they analyzed and classified the emotion tokens. The emotion tokens included \textit{emoticons}, \textit{repeating punctuations}, and \textit{repeating letters}. Their approach managed to perform well in analyzing sentiment of messages written in any natural language.
+\par
+Instead of using emotion tokens, Wang et al. [2011] proposed a graph-based model that leveraged co-occurrence of hashtags to classify the sentiment of certain hashtags. They proposed different algorithms that were compared to an SVM voting. The SVM was trained with several features, including unigrams, punctuation, and emoticons.
+The Loopy Belief Propagation algorithm managed to achieve the best performance in terms of accuracy compared to the other tested methods.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.50]{hashtag}
+	\centering
+	\caption{An example of a Hashtag Graph Model. [wang 2001]}
+	\label{fig:hashtag}
+\end{figure}
 
 \section{Conclusions}
 %\end{document}  % This is where a 'short' article might terminate
