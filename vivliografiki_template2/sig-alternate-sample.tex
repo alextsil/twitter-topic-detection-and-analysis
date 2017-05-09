@@ -213,8 +213,8 @@ Nowadays, the World Wide Web has transformed from a large, static library that p
 The most popular micro-blogging service is Twitter. The popularity of Twitter stems from its availability on a number of different electronic devices (web and cell phones. There is a prevalence of a subculture in Twitter that encourages users to acquire a large friend pool, as well as send tweets on a wide variety of subjects, typically several times a day. 
 
 Monitoring and analysing this rich and continuous flow of user-generated content can yield unprecedentedly valuable information, which would not have been available from traditional
-media outlets. Tweets can be seen as a dynamic source of information enabling individuals, corporations, and government organizations to stay informed of “what is happening
-now.” For instance, people would be interested in getting advice, opinions, facts, or updates on news or events. Companies are increasingly using Twitter to advertise and recommend products, brands, and services; to build and maintain reputations; to analyse users’ sentiment regarding their products (or those of their competitors); to respond to customers’ complaints; and to improve decision making and business intelligence. Twitter has also emerged as a fast communication channel for gathering and spreading breaking news, for predicting election results, and for sharing political events and conversations. It has also become an important analytical tool for crime prediction and monitoring terrorist activities.
+media outlets. Tweets can be seen as a dynamic source of information enabling individuals, corporations, and government organizations to stay informed of "what is happening
+now." For instance, people would be interested in getting advice, opinions, facts, or updates on news or events. Companies are increasingly using Twitter to advertise and recommend products, brands, and services; to build and maintain reputations; to analyse users' sentiment regarding their products (or those of their competitors); to respond to customers' complaints; and to improve decision making and business intelligence. Twitter has also emerged as a fast communication channel for gathering and spreading breaking news, for predicting election results, and for sharing political events and conversations. It has also become an important analytical tool for crime prediction and monitoring terrorist activities.
 
 Twitter promotes an attractive style stating breaking news, as there is very little lag between the time that an event happens or is first reported in the news media and the time at which it is the subject of a posting on Twitter. Twitter can be characterized as an endless database, which collects millions of real-time short text messages every second. Tweets also have a mechanism by which the user can link to other objects on the web such as articles, images or videos which is typically used to link tweets to related material on the Internet. Thereafter, the first result is that the size of information is multiplied and the variety of references is bigger, as well. These messages are not only just data, but they can be manipulated efficiently. One well-timed subject of research is to use those messages for event detection. In other words, the tweets is a source of inventing which topics are more seasonable. Event detection has also instant impact on the world, through the quick transmission of the news and necessary briefing in some cases. 
 
@@ -228,11 +228,11 @@ Document-level polarity classification is not a special case of text categorizat
 
 As we know, in the machine learning approach, each classifier is trained using a collection of representative data. In contrast, the semantic-orientation approach does not require prior training; instead, it measures a word containing positive or negative sentiment. Each approach has its own benefits and drawbacks. For example, the machine learning approach tends to be more accurate, but the semantic-orientation approach has better generality. Recently, a new lexicon-enhanced method was accrued to generate a set of sentiment words based on a sentiment lexicon as a new feature dimension. It combines these sentiment features with content-free and content-specific features used in the existing machine-learning approach. In the evaluation stage, they showed that adding the new set of sentiment features can increase sentiment-classification performance.
 
-The Internet and other communication technologies play a potentially disruptive role on the constraints imposed on social networks. These technologies reduce the overhead and cost for being introduced to new people regardless of geography, and help us stay in touch with those we know. Some have even gone so far as to call this ”the end of geography,” where the process of relationship formation becomes disentangled from distance altogether.
+The Internet and other communication technologies play a potentially disruptive role on the constraints imposed on social networks. These technologies reduce the overhead and cost for being introduced to new people regardless of geography, and help us stay in touch with those we know. Some have even gone so far as to call this "the end of geography", where the process of relationship formation becomes disentangled from distance altogether.
 
 However, geography still plays an important role. The reason is because of the strong relationship between event detection and geographical location each user belongs. Twitter is a social networking website, which means that users need not be viewed in isolation, but instead can be viewed as part of a large network of other users, user groups, and user cliques. Moreover, users have some meta-data information, such as description, source location, friends, which means that the social network structure in Twitter can aid in finding users that are most likely to tweet about news belonging to a particular geographic location or region.
 
-The rise of micro-blogging services spurred various applications to mine the data coming from those services. Many such applications could benefit from information about the location of users, but unfortunately location information is currently very sparse. The main problem is that less than 1 per cent of tweets are geo-tagged and information available from the location field in users’ profiles is unreliable at best. The benefits of mining those data promises new personalized information services, including local news summarized from tweets of nearby Twitter users, the targeting of regional advertisements, spreading business information to local customers, and novel location-based applications (e.g., Twitter-based earthquake detection, which can be faster than through traditional official channels).
+The rise of micro-blogging services spurred various applications to mine the data coming from those services. Many such applications could benefit from information about the location of users, but unfortunately location information is currently very sparse. The main problem is that less than 1 per cent of tweets are geo-tagged and information available from the location field in users' profiles is unreliable at best. The benefits of mining those data promises new personalized information services, including local news summarized from tweets of nearby Twitter users, the targeting of regional advertisements, spreading business information to local customers, and novel location-based applications (e.g., Twitter-based earthquake detection, which can be faster than through traditional official channels).
 
 There is a great number of geoinference using social networks One direction has produced approaches that claim to accurately locate the majority of posts within tens of kilometres of their true locations. Another method predicts the location of an individual from a sparse set of located users with peformance that exceeds IP-based geolocation. On the side, there is also a technique that predicts locations of Twitter users at different granularities, such as city, state, or time zone, using the content of their tweets and their tweeting behaviour.
 
@@ -298,6 +298,65 @@ Noise can greatly affect clustering techniques. Care should be taken when creati
 
 \subsubsection{A different approach on Clustering}
 As \cite{cataldi2013personalized} states, many clustering and classification strategies cannot by applies to this task due to the fact that they tend to ignore relationships among documents(tweets) related to a news event. \cite{cataldi2013personalized} proposes a metaphor where each term is seen as a living organism: A term's vitality status increases as users use it, and slowly degrades as references drop over time. The term's vitality is weighted based on the source of the tweet. As stated before, highly influential users are more likely to post high-importance news, hence allowing us to favour terms found in their tweets.
+
+\section{Sentiment Analysis}
+Sentiment analysis (SA) can be defined as a process that automates mining of attitudes, opinions, views and emotions from text, speech, tweets and database sources through Natural Language Processing (NLP). Sentiment analysis involves classifying opinions in text into categories like "positive" or "negative" or "neutral". It's also referred as subjectivity analysis, opinion mining, and appraisal extraction. Twitter Sentiment Analysis (TSA) tackles the problem of analyzing the messages posted on Twitter in terms of the sentiments they express. Twitter is a novel domain
+for SA and very challenging. One of the main challenges is the length limitation, according to which tweets can be up to 140 characters. In addition, the short length and the informal type of the medium have caused the emergence of textual informalities that are extensively encountered in Twitter. Thus, methods proposed for TSA should take into account these unique characteristics. The majority of TSA methods use a method from the field of machine learning, known
+as classifier. Figure 3 shows the most typical TSA process.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.23]{sentiment-extraction}
+	\centering
+	\caption{Typical process for sentiment classification.  \cite{giachanou2016like}.}
+	\label{fig:sentiment-extraction}
+\end{figure}
+
+\par
+In the literature, SA has been applied at three different levels: \textit{document}, \textit{sentence}, and \textit{entity levels}. SA at the document level aims to identify the sentiment polarity
+expressed in the whole document. The sentence level SA aims to classify each sentence as positive or negative, whereas entity-level SA detects the sentiment polarity of a
+specific entity/target of a particular object.
+Due to the length limitation, the majority of tweets contains a single sentence. Therefore, for the task of TSA there is no fundamental difference between document and sentence level. In case of tweets, SA can be applied on two levels: \textit{message/sentence} and \textit{entity levels}. Four different classes can be identified in the literature of TSA:
+
+\begin{itemize}
+	\item Machine Learning
+	\item Lexicon-Based
+	\item Hybrid (Machine Learning and Lexicon-Based)
+	\item Graph-Based
+\end{itemize}
+
+\subsection{Machine Learning}
+The majority of the proposed methods that deal with TSA employs a classifier from the field of machine learning that is trained on various features of tweets. Some of the most
+applied classifiers are the Naive Bayes (NB), Maximum Entropy (MaxEnt), Support Vector Machines (SVM), Multinomial Naive Bayes (MNB), Logistic Regression (LR), Random Forest (RF), and Conditional Random Field (CRF).
+\par
+\cite{tang2014learning} proposes learning \textit{sentiment specific word embedding} (SSWE) for sentiment analysis. It develops \textit{neural} networks and maps each \textit{ngram} to the sentiment polarity of sentence. This allows it to focus on learning the meaning of word, namely word embedding, from massive distant-supervised tweets by doing this from scratch. The effectiveness of SSWE has been implicitly evaluated by using it as features in sentiment classification on the benchmark dataset in \textit{SemEval 2013}, and explicitly verified by measuring word similarity
+in the embedding space for sentiment lexicons \cite{tang2014learning}. A deep learning approach that also uses neural networks is presented in \cite{severyn2015unitn}. This approach focuses on sentiment analysis on both message and phrase levels. The resulting model of this paper demonstrates state-of-the-art performance on both levels.
+One of the most used classifiers for addressing TSA is the SVM classifier. [Bakliwal et al. 2012] employed an SVM  classifier trained on 11 features to address TSA. They employed different pre-processing techniques one by one in order to measure their effectiveness. \textit{Spelling correction}, \textit{stemming}, and \textit{stop-words removal} managed to increase the accuracy of the classifier. Two different datasets were used to evaluate their approach, the Stanford dataset [Go et al. 2009] and the Mejaj [Bora 2012]. The best results were achieved by the combination of NLP- and Twitter-specific features.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.40]{tokenization}
+	\centering
+	\caption{Typical scenarios of preprocessing on standard text and tweets \cite{giachanou2016like}.}
+	\label{fig:tokenization}
+\end{figure}
+
+\subsection{Lexicon-Based}
+Lexicon-based methods leverage lists of words annotated by polarity or polarity score to determine the overall opinion score of a given text. The main advantage of these methods is that they do not require training data. Lexicon-based approaches have been extensively applied on conventional text such as blogs, forums, and product reviews. However, they are less explored in TSA compared to machine-learning methods. The main reason is the uniqueness of the text on Twitter that not only contains a large number of textual peculiarities and
+colloquial expressions such as \textit{yolo} and \textit{gr8} but also has a dynamic nature with new expressions and hashtags emerging from time to time. 
+\par
+Ortega et al. [2013] proposed a three-step technique for TSA. Pre-processing was performed in the first step and polarity detection in the second step. In the last step, they performed rule-based classification. Polarity detection and rule-based classification were based on WordNet and SentiWordNet. Their approach managed to achieve good results when evaluated on the SemEval-2013 dataset [Nakov et al. 2013]. However,the authors did not compare their method with existing techniques to prove its effectiveness. \cite{dang2010lexicon} introduced some new sentiment features. The results showed that adding these newly created features, which are often used in the existing semantic-orientation approach, and the content-free and content-specific features that come from the existing machine-learning approach can improve sentiment-classification performance significantly.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.60]{lexicon-token}
+	\centering
+	\caption{An example of the architecture of a framework of lexicon-based sentiment analysis.}
+	\label{fig:lexicon-token}
+\end{figure}
+
+\par
+Another approach using a newly proposed methodology, that is lexicon-based, for capturing people's emotions in real time is presented in \cite{chatzakou2013micro}. This automated technique provides the means for an automated real-time analysis. The evaluation of the experimental results proved that the proposed method managed to capture efficiently
+the emotions expressed in tweets as well as their intensity.
+
+\subsection{Hybrid}
 
 \section{Conclusions}
 %\end{document}  % This is where a 'short' article might terminate
