@@ -3,4 +3,5 @@ The style file: abbrv.bst
 Database file #1: sigproc.bib
 Warning--empty journal in sayyadigraph
 Warning--empty year in sayyadigraph
-(There were 2 warnings)
+Warning--empty booktitle in Zhang2011CombiningLA
+(There were 3 warnings)
