@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  10 MAY 2017 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  10 MAY 2017 16:15
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -381,6 +381,11 @@ Overfull \hbox (0.89572pt too wide) in paragraph at lines 347--349
  [][] 
  []
 
+
+Overfull \hbox (12.4809pt too wide) in paragraph at lines 357--358
+\T1/aer/m/n/9 machine-learning ap-proach can im-prove sentiment-classification
+ []
+
 <lexicon-token.png, id=36, 254.75175pt x 319.1925pt>
 File: lexicon-token.png Graphic file (type png)
  <use lexicon-token.png>
@@ -388,10 +393,6 @@ Package pdftex.def Info: lexicon-token.png used on input line 360.
 (pdftex.def)             Requested size: 152.85222pt x 191.51697pt.
 
 [5 <./schema.png> <./tokenization.png> <./lexicon-token.png>]
-Overfull \hbox (1.4477pt too wide) in paragraph at lines 390--392
-\T1/aer/m/n/9 pro-posed dif-fer-ent al-go-rithms that were com-pared to an SVM
- []
-
 <hashtag.png, id=42, 476.53032pt x 363.60844pt>
 File: hashtag.png Graphic file (type png)
  <use hashtag.png>
@@ -430,7 +431,7 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (8 pages, 669232 bytes).
+Output written on sig-alternate-sample.pdf (8 pages, 669235 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
