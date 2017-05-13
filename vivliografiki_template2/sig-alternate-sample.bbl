@@ -265,4 +265,9 @@ L.~Zhang, R.~Ghosh, M.~Dekhil, M.~Hsu, and B.~Liu.
   sentiment analysis.
 \newblock 2011.
 
+\bibitem{BoHanPaulCook}
+Bo~Han, Paul~Cook, Timothy~Baldwin
+\newblock Text-Based Twitter User Geolocation Prediction.
+\newblock 2014.
+
 \end{thebibliography}
