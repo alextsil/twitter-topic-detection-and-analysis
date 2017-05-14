@@ -270,4 +270,45 @@ Bo~Han, Paul~Cook, Timothy~Baldwin
 \newblock Text-Based Twitter User Geolocation Prediction.
 \newblock 2014.
 
+\bibitem{compton}
+Compton R., Jurgens D. and Allen, D. 2014
+\newblock Geotagging one hundred million twitter accounts with total variation minimization.
+\newblock In IEEE International Conference on Big Data.
+
+\bibitem{mcgee}
+McGee J., Caverlee J. A., and Cheng Z. 2013.
+\newblock Location prediction in social media based on tie strength.
+\newblock In Proceedings of CIKM, 459-468. ACM.
+
+\bibitem{jurgens}
+Jurgens, D. 2013.
+\newblock That’s what friends are for: Inferring location in online social media platforms based on social relationships.
+\newblock In Proceedings of ICWSM.
+
+\bibitem{rout}
+Rout D., Bontcheva K., Preoţiuc-Pietro D., and Cohn T. 2013.
+\newblock Where’s @Wally?: a Classification Approach to Geolocating Users Based on Their Social Ties.
+\newblock In Proceedings of the 24th ACM Conference on Hypertext and Social Media.
+
+\bibitem{liwangchang}
+Li R., Wang S., and Chang K. C.-C. 2012.
+\newblock Multiple location profiling for users and relationships from social network and content.
+\newblock Proceedings of the VLDB Endowment 5(11):1603–1614.
+
+\bibitem{kungliuhuang}
+Kong L., Liu Z., and Huang Y. 2014.
+\newblock Spot: Locating social media users based on social network context.
+\newblock Proceedings of the VLDB Endowment 7(13).
+
+\bibitem{liwangdeng}
+Li R., Wang S., Deng H., Wang R., and Chang K. C.-C. 2012.
+\newblock Towards social user profiling: unified and discriminative influence model for inferring home locations.
+\newblock In Proceedings of KDD, 1023–1031. ACM.
+
+\bibitem{davisjrpapa}
+Davis Jr. C., Pappa G., de Oliveira D. and de L Arcanjo F. 2011.
+\newblock Inferring the location of twitter messages based on
+user relationships.
+\newblock Transactions in GIS 15(6):735–751.
+
 \end{thebibliography}
