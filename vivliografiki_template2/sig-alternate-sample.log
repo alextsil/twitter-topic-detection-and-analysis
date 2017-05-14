@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  14 MAY 2017 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  14 MAY 2017 16:30
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -289,54 +289,39 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 154.
+LaTeX Font Info:    Try loading font information for U+msa on input line 157.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 154.
+LaTeX Font Info:    Try loading font information for U+msb on input line 157.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 154.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 157.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 154.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 157.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 155.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 203.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ae\omsaer.fd"
-File: omsaer.fd 1999/12/27
-)
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 203.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (3.10374pt too wide) in paragraph at lines 217--218
+Overfull \hbox (3.10374pt too wide) in paragraph at lines 219--220
 []\T1/aer/m/n/9 Twitter pro-motes an at-trac-tive style stat-ing break-ing news
 ,
  []
 
-[1{C:/Users/dev/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/Users/dev/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Overfull \hbox (10.74211pt too wide) in paragraph at lines 225--226
+Overfull \hbox (10.74211pt too wide) in paragraph at lines 227--228
 \T1/aer/m/n/9 ca-tion tech-niques, such as sup-port vec-tor ma-chines (SVMs)[31
 ],
  []
@@ -345,140 +330,139 @@ Overfull \hbox (10.74211pt too wide) in paragraph at lines 225--226
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (1.32118pt too wide) in paragraph at lines 233--234
+Overfull \hbox (1.32118pt too wide) in paragraph at lines 235--236
 \T1/aer/m/n/9 Many such ap-pli-ca-tions could ben-e-fit from in-for-ma-tion abo
 ut
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-<obama.png, id=23, 316.18124pt x 229.60782pt>
+[2] <obama.png, id=17, 316.18124pt x 229.60782pt>
 File: obama.png Graphic file (type png)
  <use obama.png>
-Package pdftex.def Info: obama.png used on input line 259.
+Package pdftex.def Info: obama.png used on input line 261.
 (pdftex.def)             Requested size: 221.32535pt x 160.72437pt.
+
+<criticaldrop.png, id=18, 271.0125pt x 260.47313pt>
+File: criticaldrop.png Graphic file (type png)
+ <use criticaldrop.png>
+Package pdftex.def Info: criticaldrop.png used on input line 275.
+(pdftex.def)             Requested size: 211.38889pt x 203.16821pt.
+
+[3 <./obama.png> <./criticaldrop.png>]
+<sentiment-extraction.png, id=23, 1016.29688pt x 443.40656pt>
+File: sentiment-extraction.png Graphic file (type png)
+
+<use sentiment-extraction.png>
+Package pdftex.def Info: sentiment-extraction.png used on input line 308.
+(pdftex.def)             Requested size: 233.74336pt x 101.98135pt.
+ <schema.png, id=24, 318.59026pt x 172.84575pt>
+File: schema.png Graphic file (type png)
+
+<use schema.png>
+Package pdftex.def Info: schema.png used on input line 321.
+(pdftex.def)             Requested size: 223.01166pt x 120.99118pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<criticaldrop.png, id=24, 271.0125pt x 260.47313pt>
-File: criticaldrop.png Graphic file (type png)
- <use criticaldrop.png>
-Package pdftex.def Info: criticaldrop.png used on input line 273.
-(pdftex.def)             Requested size: 211.38889pt x 203.16821pt.
-
-[3 <./obama.png>]
-<sentiment-extraction.png, id=28, 1016.29688pt x 443.40656pt>
-File: sentiment-extraction.png Graphic file (type png)
-
-<use sentiment-extraction.png>
-Package pdftex.def Info: sentiment-extraction.png used on input line 306.
-(pdftex.def)             Requested size: 233.74336pt x 101.98135pt.
- [4 <./criticaldrop.png> <./sentiment-extraction.png>] <schema.png, id=33, 318.
-59026pt x 172.84575pt>
-File: schema.png Graphic file (type png)
- <use schema.png>
-Package pdftex.def Info: schema.png used on input line 319.
-(pdftex.def)             Requested size: 223.01166pt x 120.99118pt.
-
-<tokenization.png, id=35, 602.25pt x 91.84312pt>
+[4 <./sentiment-extraction.png>]
+<tokenization.png, id=31, 602.25pt x 91.84312pt>
 File: tokenization.png Graphic file (type png)
  <use tokenization.png>
-Package pdftex.def Info: tokenization.png used on input line 345.
+Package pdftex.def Info: tokenization.png used on input line 347.
 (pdftex.def)             Requested size: 240.89572pt x 36.73659pt.
 
-Overfull \hbox (0.89572pt too wide) in paragraph at lines 345--347
+Overfull \hbox (0.89572pt too wide) in paragraph at lines 347--349
  [][] 
  []
 
 
-Overfull \hbox (12.4809pt too wide) in paragraph at lines 355--356
+Overfull \hbox (12.4809pt too wide) in paragraph at lines 357--358
 \T1/aer/m/n/9 machine-learning ap-proach can im-prove sentiment-classification
  []
 
-<lexicon-token.png, id=36, 254.75175pt x 319.1925pt>
+<lexicon-token.png, id=32, 254.75175pt x 319.1925pt>
 File: lexicon-token.png Graphic file (type png)
  <use lexicon-token.png>
-Package pdftex.def Info: lexicon-token.png used on input line 358.
+Package pdftex.def Info: lexicon-token.png used on input line 360.
 (pdftex.def)             Requested size: 152.85222pt x 191.51697pt.
 
 [5 <./schema.png> <./tokenization.png> <./lexicon-token.png>]
-<hashtag.png, id=42, 476.53032pt x 363.60844pt>
+<hashtag.png, id=38, 476.53032pt x 363.60844pt>
 File: hashtag.png Graphic file (type png)
  <use hashtag.png>
-Package pdftex.def Info: hashtag.png used on input line 392.
+Package pdftex.def Info: hashtag.png used on input line 394.
 (pdftex.def)             Requested size: 238.26457pt x 181.80377pt.
- [6 <./hashtag.png>] [7] <cross-validation.png, id=50, 530.98375pt x 216.81pt>
-File: cross-validation.png Graphic file (type png)
-
-<use cross-validation.png>
-Package pdftex.def Info: cross-validation.png used on input line 457.
-(pdftex.def)             Requested size: 228.31856pt x 93.22647pt.
-
-Overfull \hbox (21.75969pt too wide) in paragraph at lines 466--467
-\T1/aer/m/n/9 per-for-mance im-pact of gazetteer choice us-ing four large gazet
-teers:
- []
 
 
-Overfull \hbox (21.44464pt too wide) in paragraph at lines 468--469
-\T1/aer/m/n/9 pre-dict-ing lo-ca-tions for novel Twit-ter data cre-ated at incr
-easingly-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<temporaldecay.png, id=51, 498.86375pt x 347.2975pt>
-File: temporaldecay.png Graphic file (type png)
- <use temporaldecay.png>
-Package pdftex.def Info: temporaldecay.png used on input line 471.
-(pdftex.def)             Requested size: 224.4866pt x 156.28242pt.
-
-<self-reported.png, id=52, 1089.06876pt x 224.84pt>
+[6 <./hashtag.png>] <self-reported.png, id=42, 1089.06876pt x 224.84pt>
 File: self-reported.png Graphic file (type png)
- <use self-reported.png>
-Package pdftex.def Info: self-reported.png used on input line 478.
+
+<use self-reported.png>
+Package pdftex.def Info: self-reported.png used on input line 456.
 (pdftex.def)             Requested size: 504.0pt x 104.04861pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(sig-alternate-sample.bbl [8 <./cross-validation.png> <./temporaldecay.png>]
+<cross-validation.png, id=43, 530.98375pt x 216.81pt>
+File: cross-validation.png Graphic file (type png)
+
+<use cross-validation.png>
+Package pdftex.def Info: cross-validation.png used on input line 465.
+(pdftex.def)             Requested size: 228.31856pt x 93.22647pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<temporaldecay.png, id=44, 498.86375pt x 347.2975pt>
+File: temporaldecay.png Graphic file (type png)
+ <use temporaldecay.png>
+Package pdftex.def Info: temporaldecay.png used on input line 474.
+(pdftex.def)             Requested size: 224.4866pt x 156.28242pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [7]
+(sig-alternate-sample.bbl [8 <./self-reported.png> <./cross-validation.png> <./
+temporaldecay.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./self-reported.png>]
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) [10]
 (sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3341 strings out of 493333
- 43326 string characters out of 3139199
+ 3286 strings out of 493333
+ 42538 string characters out of 3139199
  116711 words of memory out of 3000000
- 6742 multiletter control sequences out of 15000+200000
- 64525 words of font info for 91 fonts, out of 3000000 for 9000
+ 6705 multiletter control sequences out of 15000+200000
+ 57268 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,37p,1266b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,37p,1266b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmti7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (10 pages, 765243 bytes).
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/u
+hvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on sig-alternate-sample.pdf (10 pages, 725262 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
