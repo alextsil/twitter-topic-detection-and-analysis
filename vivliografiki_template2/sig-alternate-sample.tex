@@ -429,7 +429,7 @@ The interest in creating new algorithms for geoinference prediction has shown a 
 
 \subsubsection{Techniques}
 
-\cite{backstrom2010find} presented a model using Facebook. In this model this algorithm demands from the users to dispose highly-precised locations. The main idea of this method is the building of a probabilistic model representing the likelihood of observing a relationship between two users given the geographic distance between them. They achieved a complexity of O(|V|k2 ) where V is the number of vertices in the graph and k is the average number of vertex neighbors with known locations.
+\cite{backstrom2010find} presented a model using Facebook. In this model this algorithm demands from the users to dispose highly-precised locations. The main idea of this method is the building of a probabilistic model representing the likelihood of observing a relationship between two users given the geographic distance between them. They achieved a complexity of O(|V|$k^2$ ) where V is the number of vertices in the graph and k is the average number of vertex neighbors with known locations.
 
 \cite{mcgee} proposed a method citing the difficulties adapting from Facebook to Twitter. The technique is a tree regression model that predicts the actual distance between the users. However, as the size of the network grows, computing the regression model on all pairs of located user dominates the run-time making the algorithm infeasible in practice.
 
@@ -455,7 +455,7 @@ The evaluation criteria by which methods should be measured are three: (1) accur
 \begin{figure*}[h!]
 	\includegraphics[width=\textwidth]{self-reported}
 	\centering
-	\caption{System performance when varying the gazetteer used to identify self-reported locations.}
+	\caption{System performance when varying the gazetteer used to identify self-reported locations\cite{jurgens2015geolocation}.}
 	\label{fig:reported}
 \end{figure*}
 \par 
@@ -466,14 +466,14 @@ The first (cross-validation) experiment is an evaluation of all nine methods and
 	\centering
 	\caption{Performance during cross-validation of the training
 		data, using either GPS-based or Geonames-based sources of
-		ground truth.}
+		ground truth\cite{jurgens2015geolocation}.}
 	\label{fig:cross}
 \end{figure}
 
 \begin{figure}[h]
 	\includegraphics[scale=0.45]{temporaldecay}
 	\centering
-	\caption{Performance on each day of the test data.}
+	\caption{Performance on each day of the test data\cite{jurgens2015geolocation}.}
 	\label{fig:temporal}
 \end{figure}
 
