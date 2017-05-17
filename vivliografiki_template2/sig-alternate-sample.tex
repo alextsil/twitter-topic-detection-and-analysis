@@ -398,55 +398,55 @@ The Loopy Belief Propagation algorithm managed to achieve the best performance i
 \end{figure}
 
 \section{Geolocation Prediction}
-Social media provides a continuously-updated stream of data which has proven useful for predicting group behaviors and modeling populations. Associating data with the particular geolocation from which it originated creates a powerful tool. Geo-tagged tweets would be a significant reinforcement to a variety of applications. Therefore\cite{BoHanPaulCook}, recent work has focused on geoinference for predicting the locations of posts. In this section, we are going to epitomize the some basic techniques for Geolocation prediction.
+Social media produces a continuously-updated stream of data which has proven useful for predicting group behaviors and modeling populations. Associating data with the particular geolocation from which it originated creates a powerful tool. Geo-tagged tweets would be a significant reinforcement to a variety of applications. Therefore\cite{BoHanPaulCook}, recent work has focused on geoinference for predicting the locations of posts. In this section, we are going to epitomize some of the most basic techniques for Geolocation prediction.
 
 \subsection{Prediction at Different Granularities}
 
-A number of different kind of techniques havde been recently proposed. \cite{mahmud2012tweet} propose a model whom objective is the prediction of users' location at different granularities. The dataset for this model is consisted of 1,524,522 tweets from 9551 users. The tools for collecting the data are the Google's geocoding API, Twitter's rest API and Twitter's streaming API. The next step is the severance of the techniques to some basic categories.
+A number of different kind of techniques have been recently proposed. \cite{mahmud2012tweet} propose a model whom objective is the prediction of users' location at different granularities. The dataset for this model is consisted of 1,524,522 tweets from 9551 users. The tools for collecting the data are the Google's geocoding API, Twitter's rest API and Twitter's streaming API. Below follows the severance of the techniques to some basic categories.
 
 \subsubsection{Content-based Statistical Classifiers}
 
-In this part, three different models are trained. The first one uses all the words contained in S. The second one uses all hashtags that are included in S. The last one, uses all the place names that S contains. Originally, there is a feature selection step different at each case. For the words the algorithm keeps only the nouns. For the hashtags, the algorithm keeps only the words that start with . The place names approach keeps only the terms that appear in the tweets and match names of US cities and states from the USGS gazetteer. Next step is the identification of terms that are particularly discriminative for a location. The last step is the training and classification where using Weka they select Naive Bayes Multimonial algorithm.
+In this part, three different models are trained. The first one uses all the words contained in S. The second one uses all hashtags that are included in S. The last one, uses all the place names that S contains. The first step is the feature selection. This process is different at each case. For the words the algorithm keeps only the nouns. For the hashtags, the algorithm keeps only the words that start with \#. The place names approach keeps only the terms that appear in the tweets and match names of US cities and states from the USGS gazetteer. Next step is the identification of terms that are particularly representative for a location. The last step is the training and classification phase. The learning algorithm that is selected is Naive Bayes Multimonial from Weka.
 
 \subsubsection{Content-based Heuristics Classifiers}
 
 \begin{itemize}
 	\item{Local Place Heuristic Classifier:}
-	The heuristic is that a user would mention his or her home city or state in tweets more often than any other cities or states.
+	The heuristic is that a user would report his or her home city or state in tweets more often than any other cities or states.
 	\item{Visit Place Heuristic Classifier:}
 	The heuristic is that a user would visit places in his home location more often than places in other locations.
 \end{itemize}
 
 \subsubsection{Ensemble of Location Classifiers}
 
-The main idea in this part is a dynamically weighted ensemble of statistical and heuristic classifiers. In this part it is introduced the Classification Strength metric. According to this, let T denote the set of terms from user's tweets that would be considered for classification using a particular classifier. For statistical classifiers, the matching location distribution is the set of locations in our trained model containing terms from T. For the local-place classifier, this distribution contains locations from our dataset that match content in the user's tweets. For the visit-history classifier, this distribution contains locations from the user's visit history that appear in our dataset. The Classification Strength for a user is the inverse of the number of matching locations in the matching location distribution. In this approach, the Classification Strength of a classifier for a particular instance is used as the weight of that classifier in the ensemble (for classifying that instance) and the location with the highest rank by weighted linear combination is returned as the result.
+The main idea in this part is a dynamically weighted ensemble of statistical and heuristic classifiers. Here we have the introduction of the Classification Strength metric. According to this, let T indicate the set of terms from user's tweets that would be considered for classification using a specific classifier. For statistical classifiers, the matching location distribution is the set of locations in our trained model containing terms from T. For the local-place classifier, this distribution contains locations from our dataset that match content in the user's tweets. For the visit-history classifier, this distribution includes locations from the user's visit history that show up in our dataset. The Classification Strength for a user is the inverse of the number of matching locations in the matching location distribution. In this approach, the Classification Strength of a classifier for a particular instance is used as the weight of that classifier in the ensemble (for classifying that instance) and the location with the highest rank by weighted linear combination is returned as the result.
 
 For the evaluation of the classifiers, the evaluating technique is the Recall(R). The best algorithm was the Place Name Statistical Classifier. The high recall of the place name-based classifier may be explained by the fact that many users send tweets containing names of places (cities and states in our system), and those place names tend to have bias towards users' home cities.
 
 \subsection{Network-based Geoinference}
 
-The interest in creating new algorithms for geoinference prediction has shown a great increase. A lot of new algorithms that promise great results have been detected\cite{jurgens2015geolocation}. However, the conditions under the conclusions was assembled are controversial. The objective of this subsection is the assessment of the state-of-art techniques. The three evaluating criteria are the accuracy of each algorithm in real-world conditions, (2) the impact of how ground truth is determined for training, and (3) the relationship between performance and time as models infer the locations of posts created after the model was trained. Below is the description of the 9 methods: 
+The interest in creating new algorithms for geoinference prediction has shown a great increase. A lot of new algorithms that promise great results have been detected\cite{jurgens2015geolocation}. However, the conditions under the conclusions that was assembled are controversial. The objective of this subsection is the assessment of the state-of-the-art techniques. The three evaluating criteria are the accuracy of each algorithm in real-world conditions, (2) the impact of how ground truth is determined for training, and (3) the relationship between performance and time as models infer the locations of posts created after the model was trained. Below is the description of the 9 methods: 
 
 \subsubsection{Techniques}
 
 \cite{backstrom2010find} presented a model using Facebook. In this model this algorithm demands from the users to dispose highly-precised locations. The main idea of this method is the building of a probabilistic model representing the likelihood of observing a relationship between two users given the geographic distance between them. They achieved a complexity of O(|V|$k^2$ ) where V is the number of vertices in the graph and k is the average number of vertex neighbors with known locations.
 
-\cite{mcgee} proposed a method citing the difficulties adapting from Facebook to Twitter. The technique is a tree regression model that predicts the actual distance between the users. However, as the size of the network grows, computing the regression model on all pairs of located user dominates the run-time making the algorithm infeasible in practice.
+\cite{mcgee} proposed a method citing the difficulties adapting from Facebook to Twitter. The technique is a tree regression model that predicts the actual distance between the users. However, as the size of the network grows, computing the regression model on all pairs of located user dominates the run-time, making the algorithm unpractipable in real-world applications.
 
-\cite{kungliuhuang} proposes several extensions to the Backstrom, Sun, and Marlow (2010) model based on strategies for weighting which of a user's friends are likely to be most predictive of their location.This method uses the friendship definition of Huberman, Romero, and Wu (2009) which is that a user a is friends with b if a has mentioned b in at least two posts. Given a user, their friends are weighted according to a social tightness coefficient, which is computed as the cosine similarity of the two user's friends.
+\cite{kungliuhuang} proposes several extensions to the \cite{backstrom2010find} model based on strategies for weighting which of a user's friends are likely to be most predictive of their location. This method uses the friendship definition of \cite{huberman} which is that a user a is friend with b if a has mentioned b in at least two posts. Given a user, their friends are weighted according to a social tightness coefficient, which is computed as the cosine similarity of the two user's friends.
 
-\cite{liwangdeng} proposes to infer geolocation by taking into account the influence of both users and of locations, capturing the intuition that some users are more informative for predicting the locations of the neighbors.The best-performing of their approaches first assigns users to random locations and then iteratively updates the locations of users from their neighbors and mentioned location names, refining the parameters in the update by measuring the prediction error of users with already-known locations.
+\cite{liwangdeng} proposes to infer geolocation by taking into account the influence of both users and of locations, capturing the intuition that some users are more informative for predicting the locations of the neighbors. The best-performing of their approaches first assigns users to random locations and then iteratively updates the locations of users from their neighbors and mentioned location names, refining the parameters in the update by measuring the prediction error of users with already-known locations.
 
-\cite{liwangchang} recognize that a user may relocate over the course of their social media history and therefore may have more than one home location from which they posts. To uncover all of a user's home locations, relationships between users and locations are modeled with a supervised extension to Latent Dirichlet Allocation (Blei, Ng, and Jordan 2003).
+\cite{liwangchang} recognize that a user may relocate over the course of their social media history and therefore may have more than one home location from which they posts. To uncover all of a user's home locations, relationships between users and locations are modeled with a supervised extension to Latent Dirichlet Allocation\cite{bleing}.
 
 \cite{rout} approach geolocation inference as a classification task. a SVM classifier was trained with three core features: (1) the cities of a user's friends, relative to the city's respective number of Twitter users, (2) the number of closed triads in a user's social network residing in the same city, and (3) the number of reciprocal following relationships a user has per city.
 
 \cite{davisjrpapa} propose one of the simplest approaches where given a user, their location is inferred by
 taking the most-frequently seen location among their social network.
 
-\cite{jurgens} extends the idea of location inference as label propagation by interpreting location labels spatially. Locations are inferred using an iterative, multi-pass procedure. Like Kong, Liu, and Huang (2014), during one pass, the location of each user is assigned as the geometeric median of the locations of all the user's neighbors, with groundtruth data providing the locations for the first pass.
+\cite{jurgens} extends the idea of location inference as label propagation by interpreting location labels spatially. Locations are inferred using an iterative, multi-pass procedure. Like \cite{kong2014spot}, during one pass, the location of each user is assigned as the geometeric median of the locations of all the user's neighbors, with groundtruth data providing the locations for the first pass.
 
-\cite{compton} extend the method of Jurgens (2013) to take into account edge weights in the social network and to limit the propagation of noisy locations.
+\cite{compton} extend the method of \cite{jurgens} to take into account edge weights in the social network and to limit the propagation of noisy locations.
 
 \subsubsection{Evaluation Phase}
 
@@ -455,7 +455,7 @@ The evaluation criteria by which methods should be measured are three: (1) accur
 \begin{figure*}[h!]
 	\includegraphics[width=\textwidth]{self-reported}
 	\centering
-	\caption{System performance when varying the gazetteer used to identify self-reported locations\cite{jurgens2015geolocation}.}
+	\caption{Self-reported locations identification when varying the gazetteer\cite{jurgens2015geolocation}.}
 	\label{fig:reported}
 \end{figure*}
 \par 
@@ -464,9 +464,8 @@ The first (cross-validation) experiment is an evaluation of all nine methods and
 \begin{figure}[h!]
 	\includegraphics[scale=0.43]{cross-validation}
 	\centering
-	\caption{Performance during cross-validation of the training
-		data, using either GPS-based or Geonames-based sources of
-		ground truth\cite{jurgens2015geolocation}.}
+	\caption{Cross-validation results of the training
+		data, using different sources of ground truth\cite{jurgens2015geolocation}.}
 	\label{fig:cross}
 \end{figure}
 
@@ -495,7 +494,7 @@ It is observed that the likelihood of friendship with a person is decreasing wit
 The model that is proposed finds that using a maximum likelihood approach with the simplifying assumption that the user will be either colocated or in close proximity to one of her friends, it is able to predict the physical location of 69.1 of the users with 16 or more located friends to within 25 miles, compared to only 57.2 using IP-based methods. The next step is to try with even more social data. The content of this data is how often users interact with each other and see each other's content. Using this data generates slight improvement in geolocation, which implies that users who are physically close to each other may tend to interact more often on Facebook. The last step is to iterate the maximum-likelihood algorithm. The reason is to increase the accuracy of prediction of many individuals at once. This showed significant improvement in the accuracy.
 
 %ACKNOWLEDGMENTS are optional
-\section{Acknowledgments}
+\section{Conclusion}
 
 
 \bibliographystyle{abbrv}

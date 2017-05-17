@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  16 MAY 2017 22:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  17 MAY 2017 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,7 +424,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <temporaldecay.png, id=45, 498.86375pt x 347.2975pt>
 File: temporaldecay.png Graphic file (type png)
  <use temporaldecay.png>
-Package pdftex.def Info: temporaldecay.png used on input line 474.
+Package pdftex.def Info: temporaldecay.png used on input line 473.
 (pdftex.def)             Requested size: 224.4866pt x 156.28242pt.
 
 
@@ -447,10 +447,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ) [10]
 (./sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3282 strings out of 494953
- 42657 string characters out of 6180978
- 112146 words of memory out of 5000000
- 6456 multiletter control sequences out of 15000+600000
+ 3284 strings out of 494953
+ 42675 string characters out of 6180978
+ 112154 words of memory out of 5000000
+ 6458 multiletter control sequences out of 15000+600000
  57268 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,10n,35p,1263b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -467,7 +467,7 @@ c/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (10 pages, 720075 bytes).
+Output written on sig-alternate-sample.pdf (10 pages, 720445 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

@@ -311,4 +311,14 @@ Davis Jr. C., Pappa G., de Oliveira D. and de L Arcanjo F. 2011.
 user relationships.
 \newblock Transactions in GIS 15(6):735-751.
 
+\bibitem{huberman}
+Huberman B. A., Romero D. M., and Wu F., 2009.
+\newblock Social networks that matter: Twitter under the microscope.
+\newblock First Monday 1(1).
+
+\bibitem{bleing}
+Blei D. M., Ng A. Y., Jordan M. I., 2003.
+\newblock Latent dirichlet allocation.
+\newblock Journal of Machine Learning Research 3:993-1022.
+
 \end{thebibliography}
