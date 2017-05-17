@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  17 MAY 2017 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  17 MAY 2017 22:41
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -321,7 +321,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Overfull \hbox (10.74211pt too wide) in paragraph at lines 228--229
-\T1/aer/m/n/9 ca-tion tech-niques, such as sup-port vec-tor ma-chines (SVMs)[31
+\T1/aer/m/n/9 ca-tion tech-niques, such as sup-port vec-tor ma-chines (SVMs)[20
 ],
  []
 
@@ -334,13 +334,17 @@ Overfull \hbox (1.32118pt too wide) in paragraph at lines 236--237
 ut
  []
 
-[2] <obama.png, id=12, 316.18124pt x 229.60782pt>
+
+LaTeX Warning: Citation `BoHanPaulCook' on page \thepage  undefined on input li
+ne 238.
+
+[2] <obama.png, id=13, 316.18124pt x 229.60782pt>
 File: obama.png Graphic file (type png)
  <use obama.png>
 Package pdftex.def Info: obama.png used on input line 262.
 (pdftex.def)             Requested size: 221.32535pt x 160.72437pt.
 
-<criticaldrop.png, id=13, 271.0125pt x 260.47313pt>
+<criticaldrop.png, id=14, 271.0125pt x 260.47313pt>
 File: criticaldrop.png Graphic file (type png)
  <use criticaldrop.png>
 Package pdftex.def Info: criticaldrop.png used on input line 276.
@@ -370,11 +374,6 @@ Overfull \hbox (0.89572pt too wide) in paragraph at lines 348--350
  [][] 
  []
 
-
-Overfull \hbox (12.4809pt too wide) in paragraph at lines 358--359
-\T1/aer/m/n/9 machine-learning ap-proach can im-prove sentiment-classification
- []
-
 <lexicon-token.png, id=30, 254.75175pt x 319.1925pt>
 File: lexicon-token.png Graphic file (type png)
  <use lexicon-token.png>
@@ -391,10 +390,56 @@ Package pdftex.def Info: hashtag.png used on input line 395.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./hashtag.png>] <self-reported.png, id=39, 1089.06876pt x 224.84pt>
-File: self-reported.png Graphic file (type png)
 
-<use self-reported.png>
+LaTeX Warning: Citation `BoHanPaulCook' on page \thepage  undefined on input li
+ne 402.
+
+[6 <./hashtag.png>]
+
+LaTeX Warning: Citation `mcgee' on page \thepage  undefined on input line 435.
+
+
+LaTeX Warning: Citation `kungliuhuang' on page \thepage  undefined on input lin
+e 437.
+
+
+LaTeX Warning: Citation `huberman' on page \thepage  undefined on input line 43
+7.
+
+
+LaTeX Warning: Citation `liwangdeng' on page \thepage  undefined on input line 
+439.
+
+
+LaTeX Warning: Citation `liwangchang' on page \thepage  undefined on input line
+ 441.
+
+
+LaTeX Warning: Citation `bleing' on page \thepage  undefined on input line 441.
+
+
+
+LaTeX Warning: Citation `rout' on page \thepage  undefined on input line 443.
+
+
+LaTeX Warning: Citation `davisjrpapa' on page \thepage  undefined on input line
+ 445.
+
+
+LaTeX Warning: Citation `jurgens' on page \thepage  undefined on input line 448
+.
+
+
+LaTeX Warning: Citation `compton' on page \thepage  undefined on input line 450
+.
+
+
+LaTeX Warning: Citation `jurgens' on page \thepage  undefined on input line 450
+.
+
+<self-reported.png, id=39, 1089.06876pt x 224.84pt>
+File: self-reported.png Graphic file (type png)
+ <use self-reported.png>
 Package pdftex.def Info: self-reported.png used on input line 457.
 (pdftex.def)             Requested size: 504.0pt x 104.04861pt.
 
@@ -428,19 +473,13 @@ Underfull \vbox (badness 1024) has occurred while \output is active []
 temporaldecay.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [10]
+) [9]
 (sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3535 strings out of 493333
- 45400 string characters out of 3139199
- 123259 words of memory out of 3000000
- 6965 multiletter control sequences out of 15000+200000
+ 3520 strings out of 493333
+ 45132 string characters out of 3139199
+ 123155 words of memory out of 3000000
+ 6950 multiletter control sequences out of 15000+200000
  48451 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,37p,1266b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -454,9 +493,9 @@ public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helve
 tic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate-sample.pdf (10 pages, 715138 bytes).
+Output written on sig-alternate-sample.pdf (9 pages, 710068 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
