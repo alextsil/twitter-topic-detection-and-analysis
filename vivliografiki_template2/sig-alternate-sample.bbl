@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{abdelhaq2013eventweet}
-H.~Abdelhaq, C.~Sengstock, and M.~Gertz.
-\newblock Eventweet: Online localized event detection from twitter.
-\newblock {\em Proceedings of the VLDB Endowment}, 6(12):1326--1329, 2013.
-
 \bibitem{backstrom2010find}
 L.~Backstrom, E.~Sun, and C.~Marlow.
 \newblock Find me if you can: improving geographical prediction with social and
@@ -24,11 +19,6 @@ N.~N. Bora.
 \newblock Summarizing public opinions in tweets.
 \newblock {\em International Journal of Computational Linguistics and
   Applications}, 3(1):41--55, 2012.
-
-\bibitem{budak2011structural}
-C.~Budak, D.~Agrawal, and A.~El~Abbadi.
-\newblock Structural trend analysis for online social networks.
-\newblock {\em Proceedings of the VLDB Endowment}, 4(10):646--656, 2011.
 
 \bibitem{Bueno2013SSAUOUS}
 R.~O. Bueno, A.~F. Bruz{\'o}n, Y.~Guti{\'e}rrez-V{\'a}zquez, and A.~Montoyo.
@@ -54,20 +44,6 @@ D.~Chatzakou, N.~Passalis, and A.~Vakali.
 \newblock In {\em International Conference on Big Data Analytics and Knowledge
   Discovery}, pages 337--350. Springer, 2015.
 
-\bibitem{cheng2010you}
-Z.~Cheng, J.~Caverlee, and K.~Lee.
-\newblock You are where you tweet: a content-based approach to geo-locating
-  twitter users.
-\newblock In {\em Proceedings of the 19th ACM international conference on
-  Information and knowledge management}, pages 759--768. ACM, 2010.
-
-\bibitem{compton2014geotagging}
-R.~Compton, D.~Jurgens, and D.~Allen.
-\newblock Geotagging one hundred million twitter accounts with total variation
-  minimization.
-\newblock In {\em Big Data (Big Data), 2014 IEEE International Conference on},
-  pages 393--401. IEEE, 2014.
-
 \bibitem{Cui:2011:ETB:2189339.2189365}
 A.~Cui, M.~Zhang, Y.~Liu, and S.~Ma.
 \newblock Emotion tokens: Bridging the gap among multilingual twitter sentiment
@@ -81,19 +57,6 @@ Y.~Dang, Y.~Zhang, and H.~Chen.
 \newblock A lexicon-enhanced method for sentiment classification: An experiment
   on online product reviews.
 \newblock {\em IEEE Intelligent Systems}, 25(4):46--53, 2010.
-
-\bibitem{desai2016techniques}
-M.~Desai and M.~A. Mehta.
-\newblock Techniques for sentiment analysis of twitter data: A comprehensive
-  survey.
-\newblock In {\em Computing, Communication and Automation (ICCCA), 2016
-  International Conference on}, pages 149--154. IEEE, 2016.
-
-\bibitem{dos2014deep}
-C.~N. Dos~Santos and M.~Gatti.
-\newblock Deep convolutional neural networks for sentiment analysis of short
-  texts.
-\newblock In {\em COLING}, pages 69--78, 2014.
 
 \bibitem{gao2013sequential}
 D.~Gao, W.~Li, and R.~Zhang.
@@ -116,11 +79,6 @@ A.~Giachanou and F.~Crestani.
 A.~Go, R.~Bhayani, and L.~Huang.
 \newblock Twitter sentiment classification using distant supervision.
 \newblock {\em CS224N Project Report, Stanford}, 1(12), 2009.
-
-\bibitem{hua2013sted}
-T.~Hua, F.~Chen, L.~Zhao, C.-T. Lu, and N.~Ramakrishnan.
-\newblock Sted: Semi-supervised targeted event detection.
-\newblock {\em KDD'13}, pages 11--14, 2013.
 
 \bibitem{jurgens2015geolocation}
 D.~Jurgens, T.~Finethy, J.~McCorriston, Y.~T. Xu, and D.~Ruths.
@@ -145,30 +103,10 @@ L.~Kong, Z.~Liu, and Y.~Huang.
 \newblock Spot: Locating social media users based on social network context.
 \newblock {\em Proceedings of the VLDB Endowment}, 7(13):1681--1684, 2014.
 
-\bibitem{li2012twiner}
-C.~Li, J.~Weng, Q.~He, Y.~Yao, A.~Datta, A.~Sun, and B.-S. Lee.
-\newblock Twiner: named entity recognition in targeted twitter stream.
-\newblock In {\em Proceedings of the 35th international ACM SIGIR conference on
-  Research and development in information retrieval}, pages 721--730. ACM,
-  2012.
-
 \bibitem{mahmud2012tweet}
 J.~Mahmud, J.~Nichols, and C.~Drews.
 \newblock Where is this tweet from? inferring home locations of twitter users.
 \newblock {\em ICWSM}, 12:511--514, 2012.
-
-\bibitem{mckelvey2013truthy}
-K.~R. McKelvey and F.~Menczer.
-\newblock Truthy: Enabling the study of online social networks.
-\newblock In {\em Proceedings of the 2013 conference on Computer supported
-  cooperative work companion}, pages 23--26. ACM, 2013.
-
-\bibitem{mikolov2013distributed}
-T.~Mikolov, I.~Sutskever, K.~Chen, G.~S. Corrado, and J.~Dean.
-\newblock Distributed representations of words and phrases and their
-  compositionality.
-\newblock In {\em Advances in neural information processing systems}, pages
-  3111--3119, 2013.
 
 \bibitem{nakov-EtAl:2013:SemEval-2013}
 P.~Nakov, S.~Rosenthal, Z.~Kozareva, V.~Stoyanov, A.~Ritter, and T.~Wilson.
@@ -177,13 +115,6 @@ P.~Nakov, S.~Rosenthal, Z.~Kozareva, V.~Stoyanov, A.~Ritter, and T.~Wilson.
   Semantics (*SEM), Volume 2: Proceedings of the Seventh International Workshop
   on Semantic Evaluation (SemEval 2013)}, pages 312--320, Atlanta, Georgia,
   USA, June 2013. Association for Computational Linguistics.
-
-\bibitem{paltoglou2012twitter}
-G.~Paltoglou and M.~Thelwall.
-\newblock Twitter, myspace, digg: Unsupervised sentiment analysis in social
-  media.
-\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
-  3(4):66, 2012.
 
 \bibitem{pang2004sentimental}
 B.~Pang and L.~Lee.
@@ -205,10 +136,6 @@ J.~Sankaranarayanan, H.~Samet, B.~E. Teitler, M.~D. Lieberman, and J.~Sperling.
 \newblock Twitterstand: news in tweets.
 \newblock In {\em GIS}, 2009.
 
-\bibitem{sayyadigraph}
-H.~Sayyadi and L.~Rschid.
-\newblock A graph analytical approach for fast topic detection.
-
 \bibitem{severyn2015unitn}
 A.~Severyn and A.~Moschitti.
 \newblock Unitn: Training deep convolutional neural network for twitter
@@ -217,14 +144,6 @@ A.~Severyn and A.~Moschitti.
   Evaluation (SemEval 2015), Association for Computational Linguistics, Denver,
   Colorado}, pages 464--469, 2015.
 
-\bibitem{socher2011semi}
-R.~Socher, J.~Pennington, E.~H. Huang, A.~Y. Ng, and C.~D. Manning.
-\newblock Semi-supervised recursive autoencoders for predicting sentiment
-  distributions.
-\newblock In {\em Proceedings of the conference on empirical methods in natural
-  language processing}, pages 151--161. Association for Computational
-  Linguistics, 2011.
-
 \bibitem{Speriosu:2011:TPC:2140458.2140465}
 M.~Speriosu, N.~Sudan, S.~Upadhyay, and J.~Baldridge.
 \newblock Twitter polarity classification with label propagation over lexical
@@ -232,13 +151,6 @@ M.~Speriosu, N.~Sudan, S.~Upadhyay, and J.~Baldridge.
 \newblock In {\em Proceedings of the First Workshop on Unsupervised Learning in
   NLP}, EMNLP '11, pages 53--63, Stroudsburg, PA, USA, 2011. Association for
   Computational Linguistics.
-
-\bibitem{suen2013nifty}
-C.~Suen, S.~Huang, C.~Eksombatchai, R.~Sosic, and J.~Leskovec.
-\newblock Nifty: a system for large scale information flow tracking and
-  clustering.
-\newblock In {\em Proceedings of the 22nd international conference on World
-  Wide Web}, pages 1237--1248. ACM, 2013.
 
 \bibitem{tang2014learning}
 D.~Tang, F.~Wei, N.~Yang, M.~Zhou, T.~Liu, and B.~Qin.
@@ -254,61 +166,10 @@ X.~Wang, F.~Wei, X.~Liu, M.~Zhou, and M.~Zhang.
   Information and Knowledge Management}, CIKM '11, pages 1031--1040, New York,
   NY, USA, 2011. ACM.
 
-\bibitem{weng2011event}
-J.~Weng and B.-S. Lee.
-\newblock Event detection in twitter.
-\newblock {\em ICWSM}, 11:401--408, 2011.
-
 \bibitem{Zhang2011CombiningLA}
 L.~Zhang, R.~Ghosh, M.~Dekhil, M.~Hsu, and B.~Liu.
 \newblock Combining lexicon-based and learning-based methods for twitter
   sentiment analysis.
 \newblock 2011.
-
-\bibitem{BoHanPaulCook}
-Bo Han, Paul Cook, Timothy Baldwin.
-\newblock Text-Based Twitter User Geolocation Prediction.
-\newblock 2014.
-
-\bibitem{compton}
-Compton R., Jurgens D. and Allen, D. 2014.
-\newblock Geotagging one hundred million twitter accounts with total variation minimization.
-\newblock In IEEE International Conference on Big Data.
-
-\bibitem{mcgee}
-McGee J., Caverlee J. A., and Cheng Z. 2013.
-\newblock Location prediction in social media based on tie strength.
-\newblock In Proceedings of CIKM, 459-468. ACM.
-
-\bibitem{jurgens}
-Jurgens D., 2013.
-\newblock That's what friends are for: Inferring location in online social media platforms based on social relationships.
-\newblock In Proceedings of ICWSM.
-
-\bibitem{rout}
-Rout D., Bontcheva K., Preoţiuc-Pietro D., and Cohn T. 2013.
-\newblock Where's @Wally?: a Classification Approach to Geolocating Users Based on Their Social Ties.
-\newblock In Proceedings of the 24th ACM Conference on Hypertext and Social Media.
-
-\bibitem{liwangchang}
-Li R., Wang S., and Chang K. C.-C. 2012.
-\newblock Multiple location profiling for users and relationships from social network and content.
-\newblock Proceedings of the VLDB Endowment 5(11):1603-1614.
-
-\bibitem{kungliuhuang}
-Kong L., Liu Z., and Huang Y. 2014.
-\newblock Spot: Locating social media users based on social network context.
-\newblock Proceedings of the VLDB Endowment 7(13).
-
-\bibitem{liwangdeng}
-Li R., Wang S., Deng H., Wang R., and Chang K. C.-C. 2012.
-\newblock Towards social user profiling: unified and discriminative influence model for inferring home locations.
-\newblock In Proceedings of KDD, 1023-1031. ACM.
-
-\bibitem{davisjrpapa}
-Davis Jr. C., Pappa G., de Oliveira D. and de L Arcanjo F. 2011.
-\newblock Inferring the location of twitter messages based on
-user relationships.
-\newblock Transactions in GIS 15(6):735-751.
 
 \end{thebibliography}
