@@ -1,16 +1,57 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: sig-alternate-sample.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sig-alternate-sample.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-Warning--I didn't find a database entry for "BoHanPaulCook"
-Warning--I didn't find a database entry for "mcgee"
-Warning--I didn't find a database entry for "kungliuhuang"
-Warning--I didn't find a database entry for "huberman"
-Warning--I didn't find a database entry for "liwangdeng"
-Warning--I didn't find a database entry for "liwangchang"
-Warning--I didn't find a database entry for "bleing"
-Warning--I didn't find a database entry for "rout"
-Warning--I didn't find a database entry for "davisjrpapa"
-Warning--I didn't find a database entry for "jurgens"
-Warning--I didn't find a database entry for "compton"
+Repeated entry---line 875 of file sigproc.bib
+ : @inproceedings{compton2014geotagging
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 969 of file sigproc.bib
+ : @article{kong2014spot
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in huberman2008social
 Warning--empty booktitle in Zhang2011CombiningLA
-(There were 12 warnings)
+You've used 37 entries,
+            2118 wiz_defined-function locations,
+            722 strings with 12213 characters,
+and the built_in function-call counts, 15842 in all, are:
+= -- 1616
+> -- 759
+< -- 19
++ -- 299
+- -- 260
+* -- 1105
+:= -- 2471
+add.period$ -- 127
+call.type$ -- 37
+change.case$ -- 240
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 636
+empty$ -- 1203
+format.name$ -- 260
+if$ -- 3449
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 37
+newline$ -- 188
+num.names$ -- 74
+pop$ -- 271
+preamble$ -- 1
+purify$ -- 203
+quote$ -- 0
+skip$ -- 476
+stack$ -- 0
+substring$ -- 1029
+swap$ -- 218
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 148
+warning$ -- 2
+while$ -- 151
+width$ -- 39
+write$ -- 429
+(There were 2 error messages)

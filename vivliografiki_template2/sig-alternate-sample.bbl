@@ -14,6 +14,11 @@ A.~Bakliwal, P.~Arora, S.~Madhappan, N.~Kapre, M.~Singh, and V.~Varma.
   to Subjectivity and Sentiment Analysis}, WASSA '12, pages 11--18,
   Stroudsburg, PA, USA, 2012. Association for Computational Linguistics.
 
+\bibitem{blei2003latent}
+D.~M. Blei, A.~Y. Ng, and M.~I. Jordan.
+\newblock Latent dirichlet allocation.
+\newblock {\em Journal of machine Learning research}, 3(Jan):993--1022, 2003.
+
 \bibitem{bora2012summarizing}
 N.~N. Bora.
 \newblock Summarizing public opinions in tweets.
@@ -44,6 +49,13 @@ D.~Chatzakou, N.~Passalis, and A.~Vakali.
 \newblock In {\em International Conference on Big Data Analytics and Knowledge
   Discovery}, pages 337--350. Springer, 2015.
 
+\bibitem{compton2014geotagging}
+R.~Compton, D.~Jurgens, and D.~Allen.
+\newblock Geotagging one hundred million twitter accounts with total variation
+  minimization.
+\newblock In {\em Big Data (Big Data), 2014 IEEE International Conference on},
+  pages 393--401. IEEE, 2014.
+
 \bibitem{Cui:2011:ETB:2189339.2189365}
 A.~Cui, M.~Zhang, Y.~Liu, and S.~Ma.
 \newblock Emotion tokens: Bridging the gap among multilingual twitter sentiment
@@ -57,6 +69,12 @@ Y.~Dang, Y.~Zhang, and H.~Chen.
 \newblock A lexicon-enhanced method for sentiment classification: An experiment
   on online product reviews.
 \newblock {\em IEEE Intelligent Systems}, 25(4):46--53, 2010.
+
+\bibitem{davis2011inferring}
+C.~A. Davis~Jr, G.~L. Pappa, D.~R.~R. de~Oliveira, and F.~de~L~Arcanjo.
+\newblock Inferring the location of twitter messages based on user
+  relationships.
+\newblock {\em Transactions in GIS}, 15(6):735--751, 2011.
 
 \bibitem{gao2013sequential}
 D.~Gao, W.~Li, and R.~Zhang.
@@ -79,6 +97,22 @@ A.~Giachanou and F.~Crestani.
 A.~Go, R.~Bhayani, and L.~Huang.
 \newblock Twitter sentiment classification using distant supervision.
 \newblock {\em CS224N Project Report, Stanford}, 1(12), 2009.
+
+\bibitem{han2014text}
+B.~Han, P.~Cook, and T.~Baldwin.
+\newblock Text-based twitter user geolocation prediction.
+\newblock {\em Journal of Artificial Intelligence Research}, 49:451--500, 2014.
+
+\bibitem{huberman2008social}
+B.~A. Huberman, D.~M. Romero, and F.~Wu.
+\newblock Social networks that matter: Twitter under the microscope.
+\newblock 2008.
+
+\bibitem{jurgens2013s}
+D.~Jurgens.
+\newblock That's what friends are for: Inferring location in online social
+  media platforms based on social relationships.
+\newblock {\em ICWSM}, 13:273--282, 2013.
 
 \bibitem{jurgens2015geolocation}
 D.~Jurgens, T.~Finethy, J.~McCorriston, Y.~T. Xu, and D.~Ruths.
@@ -103,10 +137,29 @@ L.~Kong, Z.~Liu, and Y.~Huang.
 \newblock Spot: Locating social media users based on social network context.
 \newblock {\em Proceedings of the VLDB Endowment}, 7(13):1681--1684, 2014.
 
+\bibitem{li2012multiple}
+R.~Li, S.~Wang, and K.~C.-C. Chang.
+\newblock Multiple location profiling for users and relationships from social
+  network and content.
+\newblock {\em Proceedings of the VLDB Endowment}, 5(11):1603--1614, 2012.
+
+\bibitem{li2012towards}
+R.~Li, S.~Wang, H.~Deng, R.~Wang, and K.~C.-C. Chang.
+\newblock Towards social user profiling: unified and discriminative influence
+  model for inferring home locations.
+\newblock In {\em Proceedings of the 18th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 1023--1031. ACM, 2012.
+
 \bibitem{mahmud2012tweet}
 J.~Mahmud, J.~Nichols, and C.~Drews.
 \newblock Where is this tweet from? inferring home locations of twitter users.
 \newblock {\em ICWSM}, 12:511--514, 2012.
+
+\bibitem{mcgee2013location}
+J.~McGee, J.~Caverlee, and Z.~Cheng.
+\newblock Location prediction in social media based on tie strength.
+\newblock In {\em Proceedings of the 22nd ACM international conference on
+  Information \& Knowledge Management}, pages 459--468. ACM, 2013.
 
 \bibitem{nakov-EtAl:2013:SemEval-2013}
 P.~Nakov, S.~Rosenthal, Z.~Kozareva, V.~Stoyanov, A.~Ritter, and T.~Wilson.
@@ -130,6 +183,13 @@ S.~Petrovi{\'c}, M.~Osborne, and V.~Lavrenko.
 \newblock In {\em Human Language Technologies: The 2010 Annual Conference of
   the North American Chapter of the Association for Computational Linguistics},
   pages 181--189. Association for Computational Linguistics, 2010.
+
+\bibitem{rout2013s}
+D.~Rout, K.~Bontcheva, D.~Preo{\c{t}}iuc-Pietro, and T.~Cohn.
+\newblock Where's@ wally?: a classification approach to geolocating users based
+  on their social ties.
+\newblock In {\em Proceedings of the 24th ACM Conference on Hypertext and
+  Social Media}, pages 11--20. ACM, 2013.
 
 \bibitem{Sankaranarayanan2009TwitterStandNI}
 J.~Sankaranarayanan, H.~Samet, B.~E. Teitler, M.~D. Lieberman, and J.~Sperling.
