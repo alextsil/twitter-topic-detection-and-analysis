@@ -1,6 +1,6 @@
 import pymongo
 
-client = pymongo.MongoClient("mongodb://")
+client = pymongo.MongoClient()
 db = client['twitter']  # whole db
 tweets = db.tweets  # group
 
