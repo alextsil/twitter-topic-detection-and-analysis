@@ -4,7 +4,7 @@ from QueryAPis import QueryApi
 db = db()
 
 # db.printAll()
-db.deleteAll()
+# db.deleteAll()
 
 queryApi = QueryApi()
 queryApi.getStream()
