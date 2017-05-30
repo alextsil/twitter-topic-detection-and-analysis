@@ -1,6 +1,6 @@
 import pymongo
 
-client = pymongo.MongoClient("mongodb://")
+client = pymongo.MongoClient('mongodb://localhost:27017/')
 db = client['twitter']  # whole db
 tweets = db.tweets  # group
 
@@ -26,5 +26,6 @@ class db:
         tweets.insert_one(tweetRawJson)
 
     def deleteAll(self):
+        print("Attempting to delete all tweets from db")
         result = tweets.delete_many({})  # no filter - deletes all documents
         print("Deleted " + str(result.deleted_count) + " document(s)")
