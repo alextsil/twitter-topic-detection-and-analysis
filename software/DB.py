@@ -1,7 +1,8 @@
 import pymongo
 
-client = pymongo.MongoClient('mongodb://localhost:27017/')
-db = client['twitter']  # whole db
+uri = "mongodb://ergasia:mongoergasia@localhost:27017/twitter?authMechanism=SCRAM-SHA-1"
+client = pymongo.MongoClient(uri)
+db = client['twitter']
 tweets = db.tweets  # group
 
 
