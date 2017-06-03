@@ -20,4 +20,4 @@ class MyStreamListener(StreamListener):
     def start (self):
         myStreamListener = MyStreamListener()
         myStream = tweepy.Stream(auth=api.auth, listener=myStreamListener)
-        myStream.filter(track=['trump']) # to filter na bgei eksw kai na mpenei param
+        myStream.filter(track=['trump'])

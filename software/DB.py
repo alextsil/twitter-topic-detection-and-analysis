@@ -1,4 +1,5 @@
 import pymongo
+from bson import ObjectId
 
 uri = "mongodb://ergasia:mongoergasia@localhost:27017/twitter?authMechanism=SCRAM-SHA-1"
 client = pymongo.MongoClient(uri)
@@ -9,6 +10,9 @@ tweets = db.tweets  # group
 class db:
     def getAll(self):
         return tweets.find()
+
+    def getOneSpecific(self):
+        return tweets.find_one({"_id": ObjectId("592daabea3576d2fb580facf")})
 
     def printAll(self):
         results = tweets.find()
