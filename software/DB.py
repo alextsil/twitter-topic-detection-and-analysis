@@ -12,7 +12,7 @@ class db:
         return tweets.find()
 
     def getOneSpecific(self):
-        return tweets.find_one({"_id": ObjectId("592daabea3576d2fb580facf")})
+        return tweets.find_oneop({"_id": ObjectId("592daabea3576d2fb580facf")})
 
     def printAll(self):
         results = tweets.find()
