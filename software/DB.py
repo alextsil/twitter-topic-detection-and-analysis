@@ -15,14 +15,14 @@ class db:
         delta = 2
         start = datetimeCenter - datetime.timedelta(minutes=delta)
         end = datetimeCenter + datetime.timedelta(minutes=delta)
-        print("Querying db at " + datetimeCenter + " with " + str(delta) + " minute deltas")
+        # Querying db at {datetimeCenter} with {delta} minute deltas
         return tweets.find({'timestamp': {'$gte': start, '$lt': end}})
 
     def getAll(self):
         return tweets.find()
 
-    def getOneSpecific(self):
-        return tweets.find_oneop({"_id": ObjectId("592daabea3576d2fb580facf")})
+    def getOneSpecific(self, objId):
+        return tweets.find_one({"_id": objId})
 
     def printAll(self):
         results = tweets.find()

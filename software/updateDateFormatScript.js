@@ -1,3 +1,4 @@
+// Run within mongo shell using open("absolute path to this file")
 var ops = [];
 var cursor = db.tweets.find();
 
