@@ -1,3 +1,5 @@
+import datetime
+
 import pymongo
 from bson import ObjectId
 
@@ -8,6 +10,14 @@ tweets = db.tweets  # group
 
 
 class db:
+    def getByDatetimeRange(self, datetimeCenter):
+        # pernw 2 lepta pisw kai 2 mprosta apo to peak
+        delta = 2
+        start = datetimeCenter - datetime.timedelta(minutes=delta)
+        end = datetimeCenter + datetime.timedelta(minutes=delta)
+        print("Querying db at " + datetimeCenter + " with " + str(delta) + " minute deltas")
+        return tweets.find({'timestamp': {'$gte': start, '$lt': end}})
+
     def getAll(self):
         return tweets.find()
 

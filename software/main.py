@@ -27,11 +27,12 @@ print("length of occurence array : " + str(len(hashtagDatetimes)))
 ones = [1] * len(hashtagDatetimes)
 # the index of the series
 idx = pandas.DatetimeIndex(hashtagDatetimes)
-# the actual series (at series of 1s for the moment)
+# the actual series (xronoi kai monades opou iparxei occurence)
 tweetSeries = pandas.Series(ones, index=idx)
 
 # Resampling / bucketing
 tweetsResampled = tweetSeries.resample('5T').sum().fillna(0)
+dtCenter = tweetsResampled.sort_values(ascending=False).index[0]
 
 print("\n")
 print("done")
