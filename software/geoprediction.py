@@ -1,8 +1,30 @@
+from geopy.geocoders import Nominatim
 import DB
 
-geo = {}
+db=DB.db()
 
-geotagged = DB.findGeottaged()
+geotagged = db.getGeotagged()
 
-for doc in geotagged:
-    geo[doc['_id']] = doc['place'];
+def dictGeoGenerator():
+    geo = {}
+    for doc in geotagged:
+        if doc['coordinates'] is not None:
+            geolocator = Nominatim()
+            k = str(doc["_id"])
+            q = str(doc["coordinates"]["coordinates"][0])
+            r = str(doc["coordinates"]["coordinates"][1])
+            location = geolocator.reverse(q + ", " + r, timeout = 25)
+            loc = location.address
+            geo[k] = str(loc)
+        else:
+            k = str(doc["_id"])
+            q = str(doc["place"]["full_name"])
+            geo[k] = q
+    return geo
+
+def printGeotaggedCities(geo):
+    for key, value in geo.items():
+        print(key + " : " + value)
+        
+a = dictGeoGenerator()
+printGeotaggedCities(a)

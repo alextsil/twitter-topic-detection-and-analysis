@@ -3,7 +3,7 @@ import datetime
 import pymongo
 from bson import ObjectId
 
-uri = "mongodb://@localhost:27017/twitter?authMechanism=SCRAM-SHA-1"
+uri = "mongodb://localhost:27017/twitter?authMechanism=SCRAM-SHA-1"
 client = pymongo.MongoClient(uri)
 db = client['twitter']
 tweets = db.tweets  # group
@@ -81,4 +81,4 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def getGeotagged(self):
-        return tweets.find({"place" : {'$ne':None}})
+        return tweets.find({"$or": [{"coordinates" : {'$not' : {'$type': 10}}}, {"place" : {'$not' : {'$type': 10}}}]})
