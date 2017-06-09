@@ -8,7 +8,7 @@ def tokenize(s):
     return tokens_re.findall(s)
 
 
-def preprocess(s, lowercase=False):
+def preprocess(s):
     tokens = tokenize(s)
     return tokens
 
@@ -29,5 +29,5 @@ print("Token compilation completed")
 punctuation = list(string.punctuation)
 stop = stopwords.words('english') + punctuation + ['rt', 'via', '…', 'trump',
                                                    'donaldtrump', 'therealdonaldtrump',
-                                                   'president']
+                                                   'president', "trump's", 'donald']
 print("Stopword list construction completed")
