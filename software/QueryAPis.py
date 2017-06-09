@@ -1,9 +1,9 @@
 import tweepy
 from tweepy import TweepError
 
+from CustomListener import MyStreamListener
 from DB import db
 from DataAccess import api
-from CustomListener import MyStreamListener
 
 
 class QueryApi:
@@ -19,6 +19,7 @@ class QueryApi:
             print(err.response)
         raise
 
+    # Ta vazei eswterika o MyStreamListener stin vash
     def getStream(self):
         stream = MyStreamListener()
         stream.start()

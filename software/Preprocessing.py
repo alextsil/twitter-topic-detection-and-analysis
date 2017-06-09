@@ -8,7 +8,7 @@ def tokenize(s):
     return tokens_re.findall(s)
 
 
-def preprocess(s, lowercase=False):
+def preprocess(s):
     tokens = tokenize(s)
     return tokens
 

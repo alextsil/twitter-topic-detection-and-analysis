@@ -1,4 +1,5 @@
 // Run within mongo shell using open("absolute path to this file")
+// Parses twitter's custom timestamp and adds a new ISO timestamp field in the db
 var ops = [];
 var cursor = db.tweets.find();
 
