@@ -81,4 +81,4 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def getGeotagged(self):
-        return tweets.find({"$or": [{"coordinates" : {'$not' : {'$type': 10}}}, {"place" : {'$not' : {'$type': 10}}}]})
+        return tweets.find({"coordinates" : {'$not' : {'$type': 10}}})
