@@ -15,7 +15,7 @@ class QueryApi:
             for tweet in tweepy.Cursor(api.home_timeline).items(numOfTweets):
                 db.insertOne(tweet._json)
                 count += 1
-                print("\rInserted " + str(count) + " tweets in the db -> ")
+                print("\rInserted " + str(count) + " tweets in the db -> ", end="")
         except TweepError as err:  # TODO: na kanei catch kai db errors
             print(err.response)
     
