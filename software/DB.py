@@ -7,7 +7,7 @@ uri = "mongodb://localhost:27017/twitter?authMechanism=SCRAM-SHA-1"
 client = pymongo.MongoClient(uri)
 db = client['twitter']
 tweets = db.tweets  # group
-
+latestTweets = db.latestTweets
 
 class db:
     def getByDatetimeRange(self, datetimeCenter):
@@ -40,6 +40,9 @@ class db:
     def insertOne(self, tweetRawJson):
         tweets.insert_one(tweetRawJson)
 
+    def insertOneLatest(self, tweetRawJson):
+        latestTweets.insert_one(tweetRawJson)
+        
     def deleteAll(self):
         print("Attempting to delete all tweets from db")
         result = tweets.delete_many({})  # no filter - deletes all documents
@@ -81,4 +84,5 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def getGeotagged(self):
-        return tweets.find({"coordinates" : {'$not' : {'$type': 10}}})
+        return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}]})
+	
