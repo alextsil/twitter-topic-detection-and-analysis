@@ -22,17 +22,21 @@ class QueryApi:
 
     def getUserTimeLine(self, username):
         alltweets = []
-        new_tweets = api.user_timeline(screen_name=username, count=200)
-        alltweets.extend(new_tweets)
-        count = 0
-        for tweet in alltweets:
-            try:
-                db.insertOneLatest(tweet._json)
-                count += 1
-                print("\rInserted " + str(count) + " tweets in the db -> ", end="")
-            except TweepError as err:
-                print(err.response)
-        print("End for user: " + username)
+        try:
+            new_tweets = api.user_timeline(screen_name=username, count=200)
+            alltweets.extend(new_tweets)
+            count = 0
+            for tweet in alltweets:
+                try:
+                    db.insertOneLatest(tweet._json)
+                    count += 1
+                    print("\rInserted " + str(count) + " tweets in the db -> ", end="")
+                except TweepError as errDb:
+                    print(errDb.response)
+            print("End for user: " + username)
+        except TweepError as err:
+            print(err.reason)
+            print("Moving on to next user..")
 
     # Ta vazei eswterika o MyStreamListener stin vash
     def getStream(self):
