@@ -10,9 +10,9 @@ geotagged = db.getGeotagged()
 
 a = gp.dictGeoGenerator(geotagged)
 
+b = list(a)
 
 #gp.printGeotaggedCities(a)
 
-
-for key, value in a.items():
-	qa.getUserTimeLine(key)
+for key in b:
+	qa.getUserTimeLine(str(k))

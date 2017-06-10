@@ -31,6 +31,7 @@ class QueryApi:
                 print("\rInserted " + str(count) + " tweets in the db -> ", end="")
         except TweepError as err:
             print(err.response)
+        print("End for user: " + username)
 
     # Ta vazei eswterika o MyStreamListener stin vash
     def getStream(self):
