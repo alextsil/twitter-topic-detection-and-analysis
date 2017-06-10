@@ -7,6 +7,7 @@ from DataAccess import api
 
 db = db()
 
+
 class QueryApi:
     # Dineis posa tweets theleis apo to timeline kai ta vazei direct sth vash
     def getHomeTimeline(self, numOfTweets):
@@ -18,19 +19,19 @@ class QueryApi:
                 print("\rInserted " + str(count) + " tweets in the db -> ", end="")
         except TweepError as err:  # TODO: na kanei catch kai db errors
             print(err.response)
-    
+
     def getUserTimeLine(self, username):
         alltweets = []
-        new_tweets = api.user_timeline(screen_name = username, count = 200)
+        new_tweets = api.user_timeline(screen_name=username, count=200)
         alltweets.extend(new_tweets)
         count = 0
-        try:
-            for tweet in alltweets:
+        for tweet in alltweets:
+            try:
                 db.insertOneLatest(tweet._json)
                 count += 1
                 print("\rInserted " + str(count) + " tweets in the db -> ", end="")
-        except TweepError as err:
-            print(err.response)
+            except TweepError as err:
+                print(err.response)
         print("End for user: " + username)
 
     # Ta vazei eswterika o MyStreamListener stin vash
