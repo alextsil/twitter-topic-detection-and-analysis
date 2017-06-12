@@ -1,5 +1,9 @@
 from geopy.geocoders import Nominatim
+from collections import Counter
 
+import DB
+
+db = DB.db()
 
 def dictGeoGenerator(geotagged):
     geo = {}
@@ -16,9 +20,31 @@ def dictGeoGenerator(geotagged):
         else:
             k = str(doc["user"]["screen_name"])
             q = str(doc["place"]["name"])
-            geo[k] = q
+            if q is not None:
+                geo[k] = q
     return geo
 
 def printGeotaggedCities(geo):
     for key, value in geo.items():
         print(key + " : " + value)
+
+def getUniqueUsersPerLoc(av):
+    # Top-20 inferenced cities
+    a = av
+    geo = Counter(av.values()).most_common(21)
+    g = [str(r[0]) for r in geo]
+    print(g)
+    g.remove('None')
+    d = {}
+    for r in g:
+        i = 0
+        for key, value in av.items():
+            w = str(r)
+            q = str(value)
+            if ((i != 30)&(w == q)&(key not in d)):
+                i = i + 1
+                k = str(key)
+                v = str(value)
+                d[k] = v
+                db.insertOneDummy(k, v)
+    return list(d)

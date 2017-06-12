@@ -8,6 +8,7 @@ client = pymongo.MongoClient(uri)
 db = client['twitter']
 tweets = db.tweets  # group
 latestTweets = db.latestTweets
+userLoc = db.userLoc
 
 class db:
     def getByDatetimeRange(self, datetimeCenter):
@@ -19,7 +20,7 @@ class db:
         return tweets.find({'timestamp': {'$gte': start, '$lt': end}})
 
     def getAll(self):
-        return tweets.find()
+        return latestTweets.find()
 
     def getOneSpecific(self, objId):
         return tweets.find_one({"_id": objId})
@@ -29,13 +30,13 @@ class db:
         for doc in results:
             print(doc)
 
-    def insertOneDummy(self):
+    def insertOneDummy(self, username, loc):
         post_data = {
-            'title': 'Python and MongoDB',
-            'content': 'PyMongo is fun, you guys',
-            'author': 'Scott'
+            'screen_name': username,
+            'Location': loc
         }
-        tweets.insert_one(post_data)
+        userLoc.insert_one(post_data)
+        print("Inserted, user: " + username + " ,location: " + loc)
 
     def insertOne(self, tweetRawJson):
         tweets.insert_one(tweetRawJson)
@@ -49,7 +50,7 @@ class db:
         print("Deleted " + str(result.deleted_count) + " document(s)")
 
     def removeUnusedFields(self):
-        res = tweets.update_many(
+        res = latestTweets.update_many(
             {},
             {"$unset": {"user.contributors_enabled": 1, "user.listed_count": 1, "user.profile_image_url": 1,
                         "user.profile_background_image_url_https": 1, "user.profile_background_color": 1,
@@ -83,6 +84,10 @@ class db:
         print("matched count: " + str(res.matched_count))
         print("modified count: " + str(res.modified_count))
         
+    def deleteMany(self, tweet):
+        latestTweets.delete_many({'user.screen_name' : tweet})
+        print("End")
+    
     def getGeotagged(self):
-        return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}]})
+        return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}, {'lang':'en'}]})
 	
