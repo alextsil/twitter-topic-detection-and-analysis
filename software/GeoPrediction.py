@@ -30,11 +30,7 @@ def printGeotaggedCities(geo):
 
 def getUniqueUsersPerLoc(av):
     # Top-20 inferenced cities
-    a = av
-    geo = Counter(av.values()).most_common(21)
-    g = [str(r[0]) for r in geo]
-    print(g)
-    g.remove('None')
+    g = ['Manhattan', 'Washington', 'Los Angeles', 'Chicago', 'Toronto', 'Houston', 'Brooklyn', 'Boston', 'Philadelphia', 'Austin', 'San Francisco', 'Phoenix', 'Dallas', 'Denver', 'Portland', 'Paris', 'Seattle', 'San Antonio', 'Columbus', 'Pittsburgh']
     d = {}
     for r in g:
         i = 0

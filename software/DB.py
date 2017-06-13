@@ -19,8 +19,14 @@ class db:
         # Querying db at {datetimeCenter} with {delta} minute deltas
         return tweets.find({'timestamp': {'$gte': start, '$lt': end}})
 
-    def getAll(self):
+    def getAllTweets(self):
+        return tweets.find()
+    
+    def getAllLatest(self):
         return latestTweets.find()
+    
+    def getAllLoc(self):
+        return userLoc.find()
 
     def getOneSpecific(self, objId):
         return tweets.find_one({"_id": objId})
@@ -85,9 +91,16 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def deleteMany(self, tweet):
-        latestTweets.delete_many({'user.screen_name' : tweet})
+        g = str(tweet)
+        userLoc.delete_many({'screen_name' : g})
         print("End")
     
     def getGeotagged(self):
         return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}, {'lang':'en'}]})
 	
+    def getDistinct(self):
+        w = latestTweets.find().distinct('user.screen_name')
+        k = {}
+        for key in w:
+            k[str(key)] = 1
+        return list(w)
