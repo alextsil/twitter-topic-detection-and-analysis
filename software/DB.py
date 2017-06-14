@@ -36,10 +36,10 @@ class db:
         for doc in results:
             print(doc)
 
-    def insertOneDummy(self, username, loc):
+    def insertOneUserLoc(self, username, loc):
         post_data = {
             'screen_name': username,
-            'Location': loc
+            'location': loc
         }
         userLoc.insert_one(post_data)
         print("Inserted, user: " + username + " ,location: " + loc)
@@ -91,16 +91,7 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def deleteMany(self, tweet):
-        g = str(tweet)
-        userLoc.delete_many({'screen_name' : g})
-        print("End")
+        userLoc.delete_many({'screen_name' : tweet})
     
     def getGeotagged(self):
         return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}, {'lang':'en'}]})
-	
-    def getDistinct(self):
-        w = latestTweets.find().distinct('user.screen_name')
-        k = {}
-        for key in w:
-            k[str(key)] = 1
-        return list(w)

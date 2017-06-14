@@ -1,5 +1,8 @@
 from geopy.geocoders import Nominatim
 from collections import Counter
+from Preprocessing import stop, preprocess, regex_str
+import re
+import operator
 
 import DB
 
@@ -42,5 +45,50 @@ def getUniqueUsersPerLoc(av):
                 k = str(key)
                 v = str(value)
                 d[k] = v
-                db.insertOneDummy(k, v)
+                db.insertOneUserLoc(k, v)
     return list(d)
+
+def getPredictions(allTweets, users):
+    terms = []
+    l = []
+    for user in users:
+        t = []
+        t.append(str(user['screen_name']))
+        t.append(str(user['location']))
+        terms.append(t)
+        if user['location'] not in l:
+            l.append(user['location'])
+    # Keep hashtag's regex
+    regex_str.pop(2)
+    regex_str.pop(3)
+    regex_str.pop(3)
+    regex_str.pop(3)
+    regex_str.pop(3)
+    regex_str.pop(3)
+    # Make a combined regex of all regex-es
+    reg = "(" + ")|(".join(regex_str) + ")"
+    # Tokenization/(removing stopwords, urls, html, 
+    for tweet in allTweets:
+        for t in terms:
+            if t[0] == str(tweet['user']['screen_name']):
+                for term in preprocess(tweet['text']):
+                    if ((term not in stop)and(not(re.match(reg, str(term))))):
+                        t.append(term)
+    pred = {}
+    for term in terms:
+        pr = {}
+        for loc in l:
+            pr[loc] = 0
+            for t in term:
+                if re.search(loc, t, re.IGNORECASE):
+                    pr[loc] += 1
+        loc = max(pr.items(), key = operator.itemgetter(1))[0]
+        pred[str(term[0])] = str(loc)
+    return pred
+
+def getAccuracy(pred, a):
+    count = 0
+    for key, value in pred.items():
+        if a[key] == value:
+            count = count + 1
+    print("Accuracy: " + str(count/len(pred)))
