@@ -36,7 +36,7 @@ class QueryApi:
             print("End for user: " + username)
         except TweepError as err:
             print(err.reason)
-            print("Moving on to next user..")
+            print("Error for user:" + username + " ,moving on to next user...")
 
     # Ta vazei eswterika o MyStreamListener stin vash
     def getStream(self):
