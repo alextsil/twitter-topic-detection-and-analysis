@@ -9,10 +9,6 @@ db = client['twitter']
 tweets = db.tweets  # group
 latestTweets = db.latestTweets
 userLoc = db.userLoc
-latestTweets1 = db.latestTweets1
-userLoc1 = db.userLoc1
-latestTweets2 = db.latestTweets2
-userLoc2 = db.userLoc2
 
 class db:
     def getByDatetimeRange(self, datetimeCenter):
@@ -27,10 +23,10 @@ class db:
         return tweets.find()
     
     def getAllLatest(self):
-        return latestTweets2.find()
+        return latestTweets.find()
     
     def getAllLoc(self):
-        return userLoc2.find()
+        return userLoc.find()
 
     def getOneSpecific(self, objId):
         return tweets.find_one({"_id": objId})
@@ -45,14 +41,14 @@ class db:
             'screen_name': username,
             'location': loc
         }
-        userLoc2.insert_one(post_data)
+        userLoc.insert_one(post_data)
         print("Inserted, user: " + username + " ,location: " + loc)
 
     def insertOne(self, tweetRawJson):
         tweets.insert_one(tweetRawJson)
 
     def insertOneLatest(self, tweetRawJson):
-        latestTweets2.insert_one(tweetRawJson)
+        latestTweets.insert_one(tweetRawJson)
         
     def deleteAll(self):
         print("Attempting to delete all tweets from db")
@@ -60,7 +56,7 @@ class db:
         print("Deleted " + str(result.deleted_count) + " document(s)")
 
     def removeUnusedFields(self):
-        res = latestTweets2.update_many(
+        res = latestTweets.update_many(
             {},
             {"$unset": {"user.contributors_enabled": 1, "user.listed_count": 1, "user.profile_image_url": 1,
                         "user.profile_background_image_url_https": 1, "user.profile_background_color": 1,
@@ -95,7 +91,7 @@ class db:
         print("modified count: " + str(res.modified_count))
         
     def deleteMany(self, tweet):
-        userLoc2.delete_many({'screen_name' : tweet})
+        userLoc.delete_many({'screen_name' : tweet})
     
     def getGeotagged(self):
         return tweets.find({'$and':[{'user.protected': False}, {'$or':[{'place' : {'$not' : {'$type' : 10}}}, {"coordinates" : {'$not' : {'$type': 10}}}]}, {'lang':'en'}]})

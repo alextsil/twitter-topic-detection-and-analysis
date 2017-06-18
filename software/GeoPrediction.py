@@ -38,14 +38,13 @@ def printGeotaggedCities(geo):
 def getUniqueUsersPerLoc(av):
     # Top-20 inferenced cities
     g = ['Manhattan', 'Washington', 'Los Angeles', 'Chicago', 'Toronto', 'Houston', 'Brooklyn', 'Boston', 'Philadelphia', 'Austin', 'San Francisco', 'Phoenix', 'Dallas', 'Denver', 'Portland', 'Paris', 'Seattle', 'San Antonio', 'Columbus', 'Pittsburgh']
-    #g = ['Manhattan', 'Washington', 'Los Angeles', 'Chicago', 'Toronto', 'Houston', 'Brooklyn', 'Boston', 'Philadelphia', 'Austin', 'San Francisco', 'Phoenix', 'Dallas', 'Denver', 'Portland']
     d = {}
     for r in g:
         i = 0
         for key, value in av.items():
             w = str(r)
             q = str(value)
-            if ((i != 25)&(w == q)&(key not in d)):
+            if ((i != 30)&(w == q)&(key not in d)):
                 i = i + 1
                 k = str(key)
                 v = str(value)
@@ -103,7 +102,7 @@ def plotFrequentCities(geo):
     g = Counter(geo.values()).most_common(36)
     x_labels = [val[0] for val in g]
     y_labels = [val[1] for val in g]
-    f = plt.figure(figsize = (16, 6))
+    f = plt.figure(figsize = (10, 6))
     ax = pd.Series(y_labels).plot(kind = 'bar')
     ax.set_xticklabels(x_labels)
     rects = ax.patches
@@ -113,12 +112,13 @@ def plotFrequentCities(geo):
     plt.bar(range(len(g)), [val[1] for val in g], align='center')
     plt.xticks(range(len(g)), [val[0] for val in g])
     plt.xticks(rotation = 70)
+    plt.ylabel('Frequency')
     f.show()
 
     g = [('Manhattan', 74), ('Washington', 67), ('Los Angeles', 66), ('Chicago', 54), ('Toronto', 32), ('Houston', 30), ('Brooklyn', 27), ('Boston', 26), ('Philadelphia', 26), ('Austin', 20), ('San Francisco', 18), ('Phoenix', 17), ('Dallas', 16), ('Denver', 16), ('Portland', 15), ('Paris', 14), ('Seattle', 13), ('San Antonio', 13), ('Columbus', 13), ('Pittsburgh', 11)]
     x_labels = [val[0] for val in g]
     y_labels = [val[1] for val in g]
-    h = plt.figure(figsize = (12, 6))
+    h = plt.figure(figsize = (10, 6))
     ax = pd.Series(y_labels).plot(kind = 'bar')
     ax.set_xticklabels(x_labels)
     rects = ax.patches
@@ -128,4 +128,23 @@ def plotFrequentCities(geo):
     plt.bar(range(len(g)), [val[1] for val in g], align='center')
     plt.xticks(range(len(g)), [val[0] for val in g])
     plt.xticks(rotation = 70)
+    plt.ylabel('Frequency')
     h.show()
+    
+    g = [('Dataset 1', 0.34), ('Dataset 2', 0.4), ('Dataset3' ,0.33), ('Dataset4', 0.34)]
+    x_labels = [val[0] for val in g]
+    y_labels = [val[1] for val in g]
+    e = plt.figure(figsize = (10, 6))
+    ax = pd.Series(y_labels).plot(kind = 'bar')
+    ax.set_xticklabels(x_labels)
+    rects = ax.patches
+    for rect, label in zip(rects, y_labels):
+        height = rect.get_height()
+        ax.text(rect.get_x() + rect.get_width()/2, height + 1, label, ha='center', va='bottom')
+    plt.bar(range(len(g)), [val[1] for val in g], align='center')
+    plt.xticks(range(len(g)), [val[0] for val in g])
+    plt.xticks(rotation = 70)
+    plt.ylabel('Accuracy')
+    e.show()
+    
+    input()

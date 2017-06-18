@@ -12,9 +12,7 @@ geotagged = db.getGeotagged()
 # Get a dict with username and location
 a = gp.dictGeoGenerator(geotagged)
 
-#gp.plotFrequentCities(a)
-
-# Get for 15 most populated cities 15 unique users
+# Get for 20 most populated cities 30 unique users
 #d = gp.getUniqueUsersPerLoc(a)
 
 #gp.printGeotaggedCities(a)
@@ -23,21 +21,19 @@ a = gp.dictGeoGenerator(geotagged)
 #for key in d:
 #	qa.getUserTimeLine(str(key))
 
-db.removeUnusedFields()
-
-db.deleteMany('absolutgrace')
-db.deleteMany('veganbongwater')
-db.deleteMany('alexisvmoran')
-db.deleteMany('JASON_PAYBACK')
+#db.removeUnusedFields()
 
 # Get all tweets
-allTweets = db.getAllLatest()
+#allTweets = db.getAllLatest()
 
 # Get all locations
-users = db.getAllLoc()
+#users = db.getAllLoc()
 
 # Get predictions
-pred = gp.getPredictions(allTweets, users)
+#pred = gp.getPredictions(allTweets, users)
 
 # Get accuracy
-gp.getAccuracy(pred, a)
+#gp.getAccuracy(pred, a)
+
+# Plotting some statistics
+gp.plotFrequentCities(a)
