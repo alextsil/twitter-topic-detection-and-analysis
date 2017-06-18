@@ -16,211 +16,205 @@
       "name": "table",
       "values": [
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496149200000,
-          "val": 148.0
+          "val": 63.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496156400000,
-          "val": 428.0
+          "val": 33.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496163600000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496170800000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496178000000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496185200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496192400000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496199600000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496206800000,
-          "val": 2.0
+          "val": 5.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496214000000,
-          "val": 28.0
+          "val": 41.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496221200000,
-          "val": 8.0
+          "val": 314.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496228400000,
-          "val": 38.0
+          "val": 1075.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496235600000,
-          "val": 44.0
+          "val": 1125.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496242800000,
-          "val": 12.0
+          "val": 341.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496250000000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496257200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496264400000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496271600000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496278800000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496286000000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496293200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496300400000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496307600000,
-          "val": 58.0
+          "val": 280.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496314800000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496322000000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496329200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496336400000,
-          "val": 17.0
+          "val": 2661.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496343600000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496350800000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496358000000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496365200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496372400000,
-          "val": 5.0
+          "val": 1576.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496379600000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496386800000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496394000000,
-          "val": 10.0
+          "val": 1357.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496401200000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496408400000,
           "val": 0.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496415600000,
-          "val": 80.0
+          "val": 848.0
         },
         {
-          "col": "marchfortruth",
+          "col": "parisagreement",
           "idx": 1496422800000,
-          "val": 95.0
+          "val": 702.0
         }
       ]
     }
   ],
-  "height": 500,
+  "height": 450,
   "legends": [
-    {
-      "fill": "color",
-      "offset": 0,
-      "properties": {},
-      "title": "Hashtags"
-    }
   ],
   "marks": [
     {
@@ -292,5 +286,5 @@
       "type": "ordinal"
     }
   ],
-  "width": 960
+  "width": 900
 }

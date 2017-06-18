@@ -16,171 +16,205 @@
       "name": "table",
       "values": [
         {
-          "col": "covfefe",
+          "col": "trumprussia",
+          "idx": 1496149200000,
+          "val": 1221.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496156400000,
+          "val": 1323.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496163600000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496170800000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496178000000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496185200000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496192400000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
+          "idx": 1496199600000,
+          "val": 0.0
+        },
+        {
+          "col": "trumprussia",
           "idx": 1496206800000,
-          "val": 1388.0
+          "val": 52.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496214000000,
-          "val": 2935.0
+          "val": 192.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496221200000,
-          "val": 393.0
+          "val": 29.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496228400000,
-          "val": 948.0
+          "val": 208.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496235600000,
-          "val": 644.0
+          "val": 126.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496242800000,
-          "val": 238.0
+          "val": 104.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496250000000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496257200000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496264400000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496271600000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496278800000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496286000000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496293200000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496300400000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496307600000,
-          "val": 179.0
+          "val": 201.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496314800000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496322000000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496329200000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496336400000,
-          "val": 71.0
+          "val": 89.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496343600000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496350800000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496358000000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496365200000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496372400000,
-          "val": 54.0
+          "val": 35.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496379600000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496386800000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496394000000,
-          "val": 46.0
+          "val": 74.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496401200000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496408400000,
           "val": 0.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496415600000,
-          "val": 71.0
+          "val": 416.0
         },
         {
-          "col": "covfefe",
+          "col": "trumprussia",
           "idx": 1496422800000,
-          "val": 78.0
+          "val": 153.0
         }
       ]
     }
   ],
-  "height": 500,
+  "height": 450,
   "legends": [
-    {
-      "fill": "color",
-      "offset": 0,
-      "properties": {},
-      "title": "Hashtags"
-    }
   ],
   "marks": [
     {
@@ -252,5 +286,5 @@
       "type": "ordinal"
     }
   ],
-  "width": 960
+  "width": 900
 }
