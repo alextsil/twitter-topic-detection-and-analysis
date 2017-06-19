@@ -146,5 +146,3 @@ def plotFrequentCities(geo):
     plt.xticks(rotation = 70)
     plt.ylabel('Accuracy')
     e.show()
-    
-    input()
