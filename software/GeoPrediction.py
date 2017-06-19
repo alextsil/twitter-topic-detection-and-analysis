@@ -102,7 +102,7 @@ def plotFrequentCities(geo):
     g = Counter(geo.values()).most_common(36)
     x_labels = [val[0] for val in g]
     y_labels = [val[1] for val in g]
-    f = plt.figure(figsize = (10, 6))
+    f = plt.figure(figsize = (10, 5))
     ax = pd.Series(y_labels).plot(kind = 'bar')
     ax.set_xticklabels(x_labels)
     rects = ax.patches
@@ -118,7 +118,7 @@ def plotFrequentCities(geo):
     g = [('Manhattan', 74), ('Washington', 67), ('Los Angeles', 66), ('Chicago', 54), ('Toronto', 32), ('Houston', 30), ('Brooklyn', 27), ('Boston', 26), ('Philadelphia', 26), ('Austin', 20), ('San Francisco', 18), ('Phoenix', 17), ('Dallas', 16), ('Denver', 16), ('Portland', 15), ('Paris', 14), ('Seattle', 13), ('San Antonio', 13), ('Columbus', 13), ('Pittsburgh', 11)]
     x_labels = [val[0] for val in g]
     y_labels = [val[1] for val in g]
-    h = plt.figure(figsize = (10, 6))
+    h = plt.figure(figsize = (10, 5))
     ax = pd.Series(y_labels).plot(kind = 'bar')
     ax.set_xticklabels(x_labels)
     rects = ax.patches
@@ -134,7 +134,7 @@ def plotFrequentCities(geo):
     g = [('Dataset 1', 0.34), ('Dataset 2', 0.4), ('Dataset3' ,0.33), ('Dataset4', 0.34)]
     x_labels = [val[0] for val in g]
     y_labels = [val[1] for val in g]
-    e = plt.figure(figsize = (10, 6))
+    e = plt.figure(figsize = (10, 5))
     ax = pd.Series(y_labels).plot(kind = 'bar')
     ax.set_xticklabels(x_labels)
     rects = ax.patches
