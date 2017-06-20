@@ -313,6 +313,11 @@
 
     <script>
         $(document).ready(function() {
+            var elements = document.getElementsByClassName('marks');
+            console.log("number of canvas element found:" + elements.length);
+            for (index = 0; index < elements.length; ++index) {
+                elements[index].className += " img-responsive";
+            }
             setTimeout(function(){
                 var elements = document.getElementsByClassName('marks');
                 console.log("number of canvas element found:" + elements.length);
