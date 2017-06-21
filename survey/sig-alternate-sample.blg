@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: sig-alternate-sample.aux
+The style file: abbrv.bst
+Database file #1: sigproc.bib
+Repeated entry---line 438 of file sigproc.bib
+ : @inproceedings{compton2014geotagging
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 485 of file sigproc.bib
+ : @article{kong2014spot
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in huberman2008social
+Warning--empty booktitle in Zhang2011CombiningLA
+(There were 2 error messages)
