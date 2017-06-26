@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  26 JUN 2017 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  27 JUN 2017 00:00
 entering extended mode
 **./document.tex
 (document.tex
@@ -944,7 +944,7 @@ Chapter 2.
 Here is how much of TeX's memory you used:
  14532 strings out of 493333
  269061 string characters out of 3146976
- 314196 words of memory out of 3000000
+ 314217 words of memory out of 3000000
  17762 multiletter control sequences out of 15000+200000
  39599 words of font info for 92 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -954,7 +954,7 @@ xpert.enc}{C:/miktex/fonts/enc/dvips/base/8r.enc}<C:/miktex/fonts/type1/public/
 kpfonts/jkpbn8a.pfb><C:/miktex/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/mikt
 ex/fonts/type1/public/kpfonts/jkpmite.pfb><C:/miktex/fonts/type1/public/kpfonts
 /jkpmn8a.pfb><C:/miktex/fonts/type1/public/kpfonts/jkpssbsc8a.pfb>
-Output written on document.pdf (9 pages, 69401 bytes).
+Output written on document.pdf (9 pages, 69421 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
