@@ -12,21 +12,10 @@
 % Fancy chapter headings
 % Author: Stefan Kottwitz 
 % Source: http://texblog.net/latex-archive/layout/fancy-chapter-tikz/
-\documentclass[svgnames]{report}
+\documentclass[12pt,svgnames]{report}
 \usepackage{tikz}
 \usepackage{verbatim}
-
-\begin{comment}
-:Title: Fancy chapter headings
-:Grid: 2x2
-
-An example of how you can use TikZ and absolute positioning to create fancy chapter headings.
-
-:Source: `TeXblog: Fancy chapter headings with TikZ`__
-
-__ http://texblog.net/latex-archive/layout/fancy-chapter-tikz/
-
-\end{comment}
+\usepackage[margin=1.1in]{geometry}
 
 \usepackage{kpfonts}
 \usepackage[explicit]{titlesec}
@@ -36,12 +25,12 @@ __ http://texblog.net/latex-archive/layout/fancy-chapter-tikz/
 	\normalfont\sffamily\Huge\bfseries\scshape}
 {\gdef\chapterlabel{\thechapter\ }}{0pt}
 {\begin{tikzpicture}[remember picture,overlay]
-	\node[yshift=-3cm] at (current page.north west)
+	\node[yshift=-1cm] at (current page.north west) %poso paxi tha einai to mple rectangle
 	{\begin{tikzpicture}[remember picture, overlay]
-		\draw[fill=LightSkyBlue] (0,0) rectangle
-		(\paperwidth,3cm);
-		\node[anchor=east,xshift=.9\paperwidth,rectangle,
-		rounded corners=20pt,inner sep=11pt,
+		\draw[fill=MidnightBlue] (0,-1) rectangle
+		(\paperwidth,2cm);
+		\node[anchor=west,xshift=.1\paperwidth,rectangle,
+		rounded corners=15pt,inner sep=9pt,
 		fill=MidnightBlue]
 		{\color{white}\chapterlabel#1};
 		\end{tikzpicture}
