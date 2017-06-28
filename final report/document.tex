@@ -16,8 +16,11 @@
 \usepackage{tikz}
 \usepackage{verbatim}
 \usepackage[margin=1.1in]{geometry}
-
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{kpfonts}
+ \usepackage{url}
 \usepackage[explicit]{titlesec}
 \newcommand*\chapterlabel{}
 \titleformat{\chapter}
@@ -53,15 +56,56 @@ Sotiris Karapostolakis \\
 Text
 \chapter{Model description}
 \section*{Section}
-Test
+List me TF sta hashtags? Preprocessing steps?
 
 \chapter{Method implementation details}
-\section*{Section}
-Test
+\section*{Event detection}
+\subsection*{Our approach}
+A combination of approaches was used for event detection: Since the dataset was static and filtered based on a query (in our case the word "trump"), terms were considered as living organisms in the given timespan, allowing us to sample a set of tweets as when each term was "most alive", while combining user reputation metrics to select a tweet from a reputable source.
+\subsubsection*{Hashtags as terms}
+We solely operated on hashtags on this step since they represent an idea or a topic, which in other cases would be difficult, or not as accurate, to define using Natural Language Processing and Machine Learning.
+\subsubsection*{The living organism implementation}
+We considered a term as most-alive at the point in which it was mostly detected in our dataset. The time window was set to 2 hours. Therefore, we had to query for the mostly found terms (using the Term Frequency statistic) and sort the results in descending order. We then generated the final that contained the original tweets with the most active terms in the dataset that were posted in the given timespan.
+\subsubsection*{Selecting a tweet for the pool}
+We now have a pool of tweets that might contain information about an event. The approach we followed was to assume that a user with a high amount of followers represents an influential event source  into a social community\cite{cataldi2013personalized}. We sorted (descending) the tweet pool by the number of followers the original poster has and ended up with 1 tweet that was our result for each term.
+
 
 \chapter{Sample results}
-\section*{Section}
-Test
+\section*{Event detection}
+Some top ranked terms (hashtags), their occurrences and the tweet that qualified as an event by our system will be presented in table \ref{tab:tftags}
+
+\begin{table}[h!]
+	\centering
+
+	\begin{tabular}{ccc}
+		\toprule
+		Term & Frequency\\
+		\midrule
+		\#parisagreement & 10442\\
+		\#covfefe & 7085\\
+		\#trumprussia & 4229\\
+		\#marchfortruth & 973\\
+		\bottomrule
+	\end{tabular}
+	\caption{Terms and occurrences}
+\label{tab:tftags}
+\end{table}
+
+
+The top ranked term, a graph showing its occurrence over time can be seen in the following figure:\\
+\\
+\includegraphics[scale=0.63]{hashparisplot.png}
+\\
+
+\newpage
+The tweet that our system determined as an event can be seen in the following figure:
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{hashparistweet.png}
+\end{figure}
+\\
+Additional results can be found in the project's website \cite{projectwebsite}.
+
 
 \chapter{Software implementation details}
 \section*{Section}
@@ -69,6 +113,6 @@ Test
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
-\nocite{*}
+
 
 \end{document}
