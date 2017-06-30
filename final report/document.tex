@@ -57,6 +57,14 @@ We considered a term as most-alive at the point in which it was mostly detected 
 We now have a pool of tweets that might contain information about an event. The approach we followed was to assume that a user with a high amount of followers represents an influential event source  into a social community\cite{cataldi2013personalized}. We sorted (descending) the tweet pool by the number of followers the original poster has and ended up with 1 tweet that was our result for each term.
 \section*{Sentiment Analysis}
 
+\subsection*{Methodology}
+For the prediction of the sentiments of the tweets gathered, we used a supervised method. In particular, we used a machine-learning technique. The tool we used for the predictions was implemented for the needs of a course in the previous semester. Since we had put a lot of effort in its implementation and it is a creation of our personal hard work we decided to use it for this assignment too.
+
+\subsubsection*{Selecting tweets from the dataset}
+All the tweets related to the top emerging event were isolated and written to different text files. These are all the tweets that include hashtags related to the event (e.g \#parisagreement). All the retweets  were removed. 
+
+\subsubsection*{Sentiment Prediction}
+The Opinion-Mining tool\cite{opinion} we used implements a SVM classifier that classifies the tweets in two categories: positive and negative. SVM performs very well and is considered as one of the top performing classifiers in the literature. This tool is further presented in \autoref{chap:framework}.
 
 
 \chapter{Sample results}
@@ -95,8 +103,34 @@ The tweet that our system determined as an event can be seen in the following fi
 \\
 Additional results can be found in the project's website \cite{projectwebsite}.
 
+\section*{Sentiment Analysis}
+The predictions of the sentiments of the tweets are presented using a pie chart in \ref{fig:pie_chart}. The number of tweets that corresponds to each sentiment is presented in Table \ref{tab:sentis}.
+
+\begin{table}[h!]
+	\centering	
+	\begin{tabular}{ccc}
+		\toprule
+		Opinion & Number of tweets\\
+		\midrule
+		Negative & 1501\\
+		Positive & 1183\\		
+		\bottomrule
+		Total & 2684
+	\end{tabular}
+	\caption{Predictions of the tweets}
+	\label{tab:sentis}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{pie_chart}
+	\caption{Percentages of negative and positive tweets.}
+	\label{fig:pie_chart}
+\end{figure}
+
 
 \chapter{Framework description}
+\label{chap:framework}
 The software created was split into modules to allow for independent, on-demand functionality. A user can easily assemble a system from these independent modules based on their needs. The complete repository can be found in the project's Github page \cite{projectgithub}.
 \subsubsection*{Getting the tweets}
 To begin with, Python and Tweepy \cite{tweepy} were used to access the Twitter API as efficiently as possible. The incoming stream was filter using the keyword "trump" and was directly saved into a MongoDb instance.
@@ -108,7 +142,7 @@ A custom preprocessing module was created to combine all the required steps need
 The pandas \cite{pandas} library was used to resample the time and allow tweet bucketing based on a given time window. The window size used for term (hashtag) visualisation was 120minutes. The results were exported directly into .json format and are presented in our website \cite{projectwebsite} using the d3js \cite{d3js} library.
 
 \subsubsection*{Getting the tweets for sentiment analysis}
-After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for prediction.
+After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets, without the retweets, containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for sentiment prediction.
 
 \subsubsection{Opinion-Mining tool}
 The tool uses a custom lexicon implementation that is shown in figure \ref{fig:opinion}. The training set used includes a total of 25k labeled reviews taken from the published dataset of imdb. Half of them are positive and the other half are negative.
