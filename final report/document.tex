@@ -8,6 +8,13 @@
 \usepackage{kpfonts}
  \usepackage{url}
 \usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\definecolor{mycolor}{HTML}{0059b3}
+\definecolor{mycolor2}{HTML}{0066cc}
+\sectionfont{\color{mycolor}}
+\subsectionfont{\color{mycolor2}}
+\subsubsectionfont{\color{mycolor2}}
 \newcommand*\chapterlabel{}
 \titleformat{\chapter}
 {\gdef\chapterlabel{}
@@ -28,7 +35,7 @@
 }
 \titlespacing*{\chapter}{0pt}{50pt}{-60pt}
 
-\title{Report on Twitter topic detection and analysis}
+\title{\color{mycolor}Report on Twitter topic detection and analysis}
 \author{
 Alex Tsilingiris \\
 Christina Pardalidou \\
@@ -37,7 +44,10 @@ Sotiris Karapostolakis \\
 
 \begin{document}
 \maketitle
+\begingroup
+\color{mycolor}
 \tableofcontents
+\endgroup
 \chapter{Introduction}
 To keimeno sth sinexeia einai mia texniki anafora tou tade project to opoio ekane auta k auta me vash auta. stoxos itan auto k auto kai gia tin diekpaireosh tou egine auto k auto.
 
@@ -158,7 +168,8 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 	\label{fig:pie_chart}
 \end{figure}
 
-\addcontentsline{toc}{section}{References}
+
+\addcontentsline{toc}{chapter}{5\:\:\: Bibliography}
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
 \end{document}
