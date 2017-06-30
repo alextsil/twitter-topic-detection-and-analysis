@@ -55,6 +55,8 @@ We solely operated on hashtags on this step since they represent an idea or a to
 We considered a term as most-alive at the point in which it was mostly detected in our dataset. The time window was set to 2 hours. Therefore, we had to query for the mostly found terms (using the Term Frequency statistic) and sort the results in descending order. We then generated the final that contained the original tweets with the most active terms in the dataset that were posted in the given timespan.
 \subsubsection*{Selecting a tweet from the pool}
 We now have a pool of tweets that might contain information about an event. The approach we followed was to assume that a user with a high amount of followers represents an influential event source  into a social community\cite{cataldi2013personalized}. We sorted (descending) the tweet pool by the number of followers the original poster has and ended up with 1 tweet that was our result for each term.
+\section*{Sentiment Analysis}
+
 
 
 \chapter{Sample results}
@@ -104,6 +106,29 @@ A custom preprocessing module was created to combine all the required steps need
 
 \subsubsection*{Plotting}
 The pandas \cite{pandas} library was used to resample the time and allow tweet bucketing based on a given time window. The window size used for term (hashtag) visualisation was 120minutes. The results were exported directly into .json format and are presented in our website \cite{projectwebsite} using the d3js \cite{d3js} library.
+
+\subsubsection*{Getting the tweets for sentiment analysis}
+After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for prediction.
+
+\subsubsection{Opinion-Mining tool}
+The tool uses a custom lexicon implementation that is shown in figure \ref{fig:opinion}. The training set used includes a total of 25k labeled reviews taken from the published dataset of imdb. Half of them are positive and the other half are negative.
+\begin{figure}[h]
+	\centering
+	\includegraphics{opinion}
+	\caption{Depiction of the diagram of the lexicon.}
+	\label{fig:opinion}
+\end{figure}
+
+\subsubsection{Preprocessing process}
+\begin{itemize}
+	\item Punctuation removal, tokenization.
+	\item Stemming (non-English terms are deleted).
+	\item Terms frequencies.
+	\item TF/IDF Vectors.
+\end{itemize}
+
+\subsubsection{Prediction}
+The model uses a SVM classifier with SGD tuning for prediction. The vectors are defined with TF: log normalized and IDF: smooth normalized. The output is a text file that has in each row the name of the input text file and the output of the prediction for this file i.e 1.0 for positive and 0.0 for negative tweets.
 
 
 \bibliographystyle{abbrv}

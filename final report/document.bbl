@@ -11,9 +11,14 @@ d3js.
 \newblock d3js.
 \newblock \url{https://d3js.org/}.
 
+\bibitem{opinion}
+Github.
+\newblock Opinion mining tool.
+\newblock \url{https://github.com/lefterisKl/Opinion-Mining/}.
+
 \bibitem{projectgithub}
 Github.
-\newblock Project github.
+\newblock Project repository.
 \newblock
   \url{https://github.com/alextsil/twitter-topic-detection-and-analysis/}.
 
