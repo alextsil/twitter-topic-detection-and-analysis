@@ -6,6 +6,32 @@ M.~Cataldi, L.~D. Caro, and C.~Schifanella.
 \newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
   5(1):7, 2013.
 
+\bibitem{d3js}
+d3js.
+\newblock d3js.
+\newblock \url{https://d3js.org/}.
+
+\bibitem{projectgithub}
+Github.
+\newblock Project github.
+\newblock
+  \url{https://github.com/alextsil/twitter-topic-detection-and-analysis/}.
+
+\bibitem{nltk}
+nltk.
+\newblock nltk.
+\newblock \url{http://www.nltk.org/}.
+
+\bibitem{pandas}
+pandas.
+\newblock pandas.
+\newblock \url{http://pandas.pydata.org/}.
+
+\bibitem{tweepy}
+Tweepy.
+\newblock Tweepy.
+\newblock \url{http://www.tweepy.org/}.
+
 \bibitem{projectwebsite}
 Website.
 \newblock Project website.

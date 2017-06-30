@@ -1,17 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Welcome to Overleaf --- just edit your LaTeX on the left,
-% and we'll compile it for you on the right. If you give
-% someone the link to this page, they can edit at the same
-% time. See the help menu above for more info. Enjoy!
-%
-% Note: you can export the pdf to see the result at full
-% resolution.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Fancy chapter headings
-% Author: Stefan Kottwitz 
-% Source: http://texblog.net/latex-archive/layout/fancy-chapter-tikz/
 \documentclass[12pt,svgnames]{report}
 \usepackage{tikz}
 \usepackage{verbatim}
@@ -53,10 +39,11 @@ Sotiris Karapostolakis \\
 \maketitle
 \tableofcontents
 \chapter{Introduction}
-Text
+To keimeno sth sinexeia einai mia texniki anafora tou tade project to opoio ekane auta k auta me vash auta. stoxos itan auto k auto kai gia tin diekpaireosh tou egine auto k auto.
+
 \chapter{Model description}
 \section*{Section}
-List me TF sta hashtags? Preprocessing steps?
+No idea. isws : List me TF sta hashtags? Preprocessing steps?
 
 \chapter{Method implementation details}
 \section*{Event detection}
@@ -66,7 +53,7 @@ A combination of approaches was used for event detection: Since the dataset was 
 We solely operated on hashtags on this step since they represent an idea or a topic, which in other cases would be difficult, or not as accurate, to define using Natural Language Processing and Machine Learning.
 \subsubsection*{The living organism implementation}
 We considered a term as most-alive at the point in which it was mostly detected in our dataset. The time window was set to 2 hours. Therefore, we had to query for the mostly found terms (using the Term Frequency statistic) and sort the results in descending order. We then generated the final that contained the original tweets with the most active terms in the dataset that were posted in the given timespan.
-\subsubsection*{Selecting a tweet for the pool}
+\subsubsection*{Selecting a tweet from the pool}
 We now have a pool of tweets that might contain information about an event. The approach we followed was to assume that a user with a high amount of followers represents an influential event source  into a social community\cite{cataldi2013personalized}. We sorted (descending) the tweet pool by the number of followers the original poster has and ended up with 1 tweet that was our result for each term.
 
 
@@ -92,7 +79,7 @@ Some top ranked terms (hashtags), their occurrences and the tweet that qualified
 \end{table}
 
 
-The top ranked term, a graph showing its occurrence over time can be seen in the following figure:\\
+A graph showing the top ranked term's occurrence over time can be seen in the following figure:\\
 \\
 \includegraphics[scale=0.63]{hashparisplot.png}
 \\
@@ -107,12 +94,18 @@ The tweet that our system determined as an event can be seen in the following fi
 Additional results can be found in the project's website \cite{projectwebsite}.
 
 
-\chapter{Software implementation details}
-\section*{Section}
-Test
+\chapter{Framework description}
+The software created was split into modules to allow for independent, on-demand functionality. A user can easily assemble a system from these independent modules based on their needs. The complete repository can be found in the project's Github page \cite{projectgithub}.
+\subsubsection*{Getting the tweets}
+To begin with, Python and Tweepy \cite{tweepy} were used to access the Twitter API as efficiently as possible. The incoming stream was filter using the keyword "trump" and was directly saved into a MongoDb instance.
+
+\subsubsection*{Preprocessing the dataset}
+A custom preprocessing module was created to combine all the required steps needed when analysing tweets. The nltk \cite{nltk} library along with some custom regular expressions were used in order to complete the following actions: group hashtag symbols with the hashtag word, group mention symbols with the mention target, keep URLs functional and finally remove stop-words, punctuation and twitter specifics such as "via" and "rt". Finally, a script was created to convert datetime strings into MongoDb specific datetime strings so that range queries were possible.
+
+\subsubsection*{Plotting}
+The pandas \cite{pandas} library was used to resample the time and allow tweet bucketing based on a given time window. The window size used for term (hashtag) visualisation was 120minutes. The results were exported directly into .json format and are presented in our website \cite{projectwebsite} using the d3js \cite{d3js} library.
+
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
-
-
 \end{document}

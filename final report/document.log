@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  28 JUN 2017 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.8)  30 JUN 2017 13:24
 entering extended mode
 **./document.tex
 (document.tex
@@ -894,45 +894,45 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 ) (document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 52.
-LaTeX Font Info:    Try loading font information for OML+jkp on input line 52.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 38.
+LaTeX Font Info:    Try loading font information for OML+jkp on input line 38.
 
 (C:\miktex\tex\latex\kpfonts\omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for OMS+jkp on input line 52.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+jkp on input line 38.
  (C:\miktex\tex\latex\kpfonts\omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 52.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 38.
 (C:\miktex\tex\latex\kpfonts\omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 52.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 38.
 
  (C:\miktex\tex\latex\kpfonts\ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 38.
  (C:\miktex\tex\latex\base\ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+jkp on input line 52.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+jkp on input line 38.
  (C:\miktex\tex\latex\kpfonts\ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
@@ -997,7 +997,7 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 38.
 (C:\miktex\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1006,32 +1006,32 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
  (document.out)
 (document.out)
 \@outlinefile=\write4
 \openout4 = `document.out'.
 
-LaTeX Font Info:    Try loading font information for U+jkpmia on input line 54.
+LaTeX Font Info:    Try loading font information for U+jkpmia on input line 40.
 
  (C:\miktex\tex\latex\kpfonts\ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsya on input line 54.
+LaTeX Font Info:    Try loading font information for U+jkpsya on input line 40.
 
 
 (C:\miktex\tex\latex\kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 54.
+LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 40.
 
 
 (C:\miktex\tex\latex\kpfonts\ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 54.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 40.
 
 
 (C:\miktex\tex\latex\kpfonts\ujkpsyc.fd
@@ -1039,7 +1039,7 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 ) [1
 
 {C:/Users/Alexei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 54
+LaTeX Font Info:    Try loading font information for OT1+jkpss on input line 40
 .
  (C:\miktex\tex\latex\kpfonts\ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
@@ -1052,7 +1052,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \chapter
+l.41 \chapter
              {Introduction} [1
 
 ]
@@ -1072,20 +1072,20 @@ Chapter 4.
 <hashparisplot.png, id=59, 727.21687pt x 348.55219pt>
 File: hashparisplot.png Graphic file (type png)
  <use hashparisplot.png>
-Package pdftex.def Info: hashparisplot.png used on input line 97.
+Package pdftex.def Info: hashparisplot.png used on input line 84.
 (pdftex.def)             Requested size: 458.14905pt x 219.58902pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
 
-Overfull \hbox (2.84892pt too wide) in paragraph at lines 95--99
+Overfull \hbox (2.84892pt too wide) in paragraph at lines 82--86
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
@@ -1096,7 +1096,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--99
 File: hashparistweet.png Graphic file (type png)
 
 <use hashparistweet.png>
-Package pdftex.def Info: hashparistweet.png used on input line 104.
+Package pdftex.def Info: hashparistweet.png used on input line 91.
 (pdftex.def)             Requested size: 344.03447pt x 380.92218pt.
  [6 <./hashparistweet.png>]
 Chapter 5.
@@ -1107,35 +1107,41 @@ LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 12
 .
  (C:\miktex\tex\latex\kpfonts\ot1jkptt.fd
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-)) [8
+)
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+[]\OT1/jkp/m/n/12 Github.  Project github.  []$\OT1/jkptt/m/n/12 https : / / gi
+thub . com / alextsil /
+ []
+
+) [8
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: FA12799A1A81293B495888A1858EA0BE;283.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
+(rerunfilecheck)             Checksum: 47C3505937F7431CA1A0CE8787803636;273.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 18061 strings out of 493333
- 322300 string characters out of 3146976
- 389802 words of memory out of 3000000
- 21234 multiletter control sequences out of 15000+200000
+ 18071 strings out of 493333
+ 322401 string characters out of 3146976
+ 390945 words of memory out of 3000000
+ 21239 multiletter control sequences out of 15000+200000
  42176 words of font info for 98 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,75p,446b,1127s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,10n,75p,603b,1129s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/miktex/fonts/enc/dvips/base/8r.enc}{C:/miktex/fonts/enc/dvips/kpfonts/kpf
 onts-expert.enc}<C:/miktex/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/miktex/fo
 nts/type1/public/kpfonts/jkpmit8a.pfb><C:/miktex/fonts/type1/public/kpfonts/jkp
 mn8a.pfb><C:/miktex/fonts/type1/public/kpfonts/jkpmne.pfb><C:/miktex/fonts/type
 1/public/kpfonts/jkpssbsc8a.pfb><C:/miktex/fonts/type1/public/kpfonts/jkpttmn8a
 .pfb>
-Output written on document.pdf (9 pages, 301044 bytes).
+Output written on document.pdf (9 pages, 307976 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
