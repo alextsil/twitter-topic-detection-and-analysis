@@ -41,10 +41,6 @@ Sotiris Karapostolakis \\
 \chapter{Introduction}
 To keimeno sth sinexeia einai mia texniki anafora tou tade project to opoio ekane auta k auta me vash auta. stoxos itan auto k auto kai gia tin diekpaireosh tou egine auto k auto.
 
-\chapter{Model description}
-\section*{Section}
-No idea. isws : List me TF sta hashtags? Preprocessing steps?
-
 \chapter{Method implementation details}
 \section*{Event detection}
 \subsection*{Our approach}
@@ -66,8 +62,42 @@ All the tweets related to the top emerging event were isolated and written to di
 \subsubsection*{Sentiment Prediction}
 The Opinion-Mining tool\cite{opinion} we used implements a SVM classifier that classifies the tweets in two categories: positive and negative. SVM performs very well and is considered as one of the top performing classifiers in the literature. This tool is further presented in \autoref{chap:framework}.
 
+\chapter{Framework description}
+\label{chap:framework}
+The software created was split into modules to allow for independent, on-demand functionality. A user can easily assemble a system from these independent modules based on their needs. The complete repository can be found in the project's Github page \cite{projectgithub}.
+\subsubsection*{Getting the tweets}
+To begin with, Python and Tweepy \cite{tweepy} were used to access the Twitter API as efficiently as possible. The incoming stream was filter using the keyword "trump" and was directly saved into a MongoDb instance.
 
-\chapter{Sample results}
+\subsubsection*{Preprocessing the dataset}
+A custom preprocessing module was created to combine all the required steps needed when analyzing tweets. The nltk \cite{nltk} library along with some custom regular expressions were used in order to complete the following actions: group hashtag symbols with the hashtag word, group mention symbols with the mention target, keep URLs functional and finally remove stop-words, punctuation and twitter specifics such as "via" and "rt". Finally, a script was created to convert datetime strings into MongoDb specific datetime strings so that range queries were possible.
+
+\subsubsection*{Plotting}
+The pandas \cite{pandas} library was used to resample the time and allow tweet bucketing based on a given time window. The window size used for term (hashtag) visualization was 120minutes. The results were exported directly into .json format and are presented in our website \cite{projectwebsite} using the d3js \cite{d3js} library.
+
+\subsubsection*{Getting the tweets for sentiment analysis}
+After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets, without the retweets, containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for sentiment prediction.
+
+\subsubsection{Opinion-Mining tool}
+The tool uses a custom lexicon implementation that is shown in figure \ref{fig:opinion}. The training set used includes a total of 25k labeled reviews taken from the published dataset of IMDb \cite{imdb}. Half of them are positive and the other half are negative.
+\begin{figure}[h]
+	\centering
+	\includegraphics{opinion}
+	\caption{Depiction of the diagram of the lexicon.}
+	\label{fig:opinion}
+\end{figure}
+
+\subsubsection{Preprocessing process}
+\begin{itemize}
+	\item Punctuation removal, tokenization.
+	\item Stemming (non-English terms are deleted).
+	\item Terms frequencies.
+	\item TF/IDF Vectors.
+\end{itemize}
+
+\subsubsection{Prediction}
+The model uses a SVM classifier with SGD tuning for prediction. The vectors are defined with TF: log normalized and IDF: smooth normalized. The output is a text file that has in each row the name of the input text file and the output of the prediction for this file i.e 1.0 for positive and 0.0 for negative tweets.
+
+\chapter{Results}
 \section*{Event detection}
 Some top ranked terms (hashtags), their occurrences and the tweet that qualified as an event by our system will be presented in table \ref{tab:tftags}
 
@@ -128,43 +158,7 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 	\label{fig:pie_chart}
 \end{figure}
 
-
-\chapter{Framework description}
-\label{chap:framework}
-The software created was split into modules to allow for independent, on-demand functionality. A user can easily assemble a system from these independent modules based on their needs. The complete repository can be found in the project's Github page \cite{projectgithub}.
-\subsubsection*{Getting the tweets}
-To begin with, Python and Tweepy \cite{tweepy} were used to access the Twitter API as efficiently as possible. The incoming stream was filter using the keyword "trump" and was directly saved into a MongoDb instance.
-
-\subsubsection*{Preprocessing the dataset}
-A custom preprocessing module was created to combine all the required steps needed when analysing tweets. The nltk \cite{nltk} library along with some custom regular expressions were used in order to complete the following actions: group hashtag symbols with the hashtag word, group mention symbols with the mention target, keep URLs functional and finally remove stop-words, punctuation and twitter specifics such as "via" and "rt". Finally, a script was created to convert datetime strings into MongoDb specific datetime strings so that range queries were possible.
-
-\subsubsection*{Plotting}
-The pandas \cite{pandas} library was used to resample the time and allow tweet bucketing based on a given time window. The window size used for term (hashtag) visualisation was 120minutes. The results were exported directly into .json format and are presented in our website \cite{projectwebsite} using the d3js \cite{d3js} library.
-
-\subsubsection*{Getting the tweets for sentiment analysis}
-After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets, without the retweets, containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for sentiment prediction.
-
-\subsubsection{Opinion-Mining tool}
-The tool uses a custom lexicon implementation that is shown in figure \ref{fig:opinion}. The training set used includes a total of 25k labeled reviews taken from the published dataset of imdb. Half of them are positive and the other half are negative.
-\begin{figure}[h]
-	\centering
-	\includegraphics{opinion}
-	\caption{Depiction of the diagram of the lexicon.}
-	\label{fig:opinion}
-\end{figure}
-
-\subsubsection{Preprocessing process}
-\begin{itemize}
-	\item Punctuation removal, tokenization.
-	\item Stemming (non-English terms are deleted).
-	\item Terms frequencies.
-	\item TF/IDF Vectors.
-\end{itemize}
-
-\subsubsection{Prediction}
-The model uses a SVM classifier with SGD tuning for prediction. The vectors are defined with TF: log normalized and IDF: smooth normalized. The output is a text file that has in each row the name of the input text file and the output of the prediction for this file i.e 1.0 for positive and 0.0 for negative tweets.
-
-
+\addcontentsline{toc}{section}{References}
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
 \end{document}
