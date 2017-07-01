@@ -74,6 +74,17 @@ All the tweets related to the top emerging event were isolated and written to di
 \subsubsection*{Sentiment Prediction}
 The Opinion-Mining tool\cite{opinion} we used implements a SVM classifier that classifies the tweets into two categories: positive and negative. SVM performs very well and is considered as one of the top performing classifiers in the literature. This tool is further presented in \autoref{chap:framework}.
 
+\section*{Location Prediction}
+
+\subsection*{Geoinference}
+Twitter provides the users with the ability to infer the location either defining a place the user is or enabling the location, where the position of the user is more accurate. The generic approach started by gathering through a query to our database both categories' users. We excluded users with minor place inference, due to shortage of information that will lead to a correct prediction. The main idea was to form a model to foresee some of those users' location.
+
+\subsection*{Dataset Creation}
+We selected to create 4 different datasets having the ability to compare the results. Initially we collected users' tweets having as a criterion a specific number(20) of the most inferenced locations. We noticed that all was in USA. The second criterion was the number of users for each locality. Based on the second, we formulated the 4 different datasets. 
+
+\subsection*{Implementation}
+The methodology is based on a simple technique. For every user we calculated the frequency of every location's reference in his/her tweets. The highest number was given as a prediction. We consulted that a user is most probable to cite his/her city mroe frequent than every other place. The results was quite encouraging.
+
 \chapter{Framework description}
 \label{chap:framework}
 The software created was split into modules to allow for independent, on-demand functionality. A user can easily assemble a system from these independent modules based on their needs. The complete repository can be found in the project's Github page \cite{projectgithub}.
@@ -88,6 +99,9 @@ The pandas \cite{pandas} library was used to resample the time and allow tweet b
 
 \subsubsection*{Getting the tweets for sentiment analysis}
 After detecting the top event that occurred during the time the tweets were crawled, the dataset was filtered in order to get only the tweets, without the retweets, containing hashtags related to the emerging event (e.g \#parisagreement, \#climatechange). These specific tweets were written to text files so they can be imported to the Opinion-Mining tool\cite{opinion} for sentiment prediction.
+
+\subsubsection*{Geoprediction datasets}
+We mentioned the use of 4 different datasets. Now, we are going to explain the way of forming the datasets. The first step was to calculate the most refered places. From those we selected the top-20 cities for the first, third and fourth dataset. We excluded places such as states or countries. The second step was the selection of a specific number of unique users for each dataset. The numbers was 20, 15, 25, 30 for each corresponding dataset. At every time we picked up the 200 latest tweets for each user. The algorithm was applied in each dataset.
 
 \subsubsection{Opinion-Mining tool}
 The tool uses a custom lexicon implementation that is shown in figure \ref{fig:opinion}. The training set used includes a total of 25k labeled reviews taken from the published dataset of IMDb \cite{imdb}. Half of them are positive and the other half are negative.
@@ -108,6 +122,13 @@ The tool uses a custom lexicon implementation that is shown in figure \ref{fig:o
 
 \subsubsection{Prediction}
 The model uses a SVM classifier with SGD tuning for prediction. The vectors are defined with TF: log normalized and IDF: smooth normalized. The output is a text file that has in each row the name of the input text file and the output of the prediction for this file i.e 1.0 for positive and 0.0 for negative tweets.
+
+\subsubsection*{Geoprediction Approach}
+\begin{enumerate}
+	\item Tokenization: Collecting the texts of every user applying tokenization. Creation a list of tokens for each user.
+	\item Removal of stopwords: Removing of some standard words.
+	\item Calculation of the frequencies: The most frequent word is given as a prediction. The algorithm counts also the appearance of a word that is included in a word, such as \#prayforparis.
+\end{enumerate}
 
 \chapter{Results}
 \section*{Event detection}
@@ -170,6 +191,7 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 	\label{fig:pie_chart}
 \end{figure}
 
+\section*{Location Prediction}
 
 
 \bibliographystyle{abbrv}

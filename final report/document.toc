@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \contentsline {chapter}{\numberline {2}Method implementation details}{3}{chapter.2}
 \contentsline {chapter}{\numberline {3}Framework description}{5}{chapter.3}
-\contentsline {subsubsection}{Opinion-Mining tool}{5}{section*.15}
-\contentsline {subsubsection}{Preprocessing process}{6}{section*.16}
-\contentsline {subsubsection}{Prediction}{6}{section*.17}
-\contentsline {chapter}{\numberline {4}Results}{7}{chapter.4}
-\contentsline {chapter}{Bibliography}{10}{chapter*.20}
+\contentsline {subsubsection}{Opinion-Mining tool}{6}{section*.20}
+\contentsline {subsubsection}{Preprocessing process}{6}{section*.21}
+\contentsline {subsubsection}{Prediction}{7}{section*.22}
+\contentsline {chapter}{\numberline {4}Results}{8}{chapter.4}
+\contentsline {chapter}{Bibliography}{11}{chapter*.26}
