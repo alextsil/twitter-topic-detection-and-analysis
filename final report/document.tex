@@ -11,6 +11,7 @@
 \usepackage[explicit]{titlesec}
 \usepackage{xcolor}
 \usepackage{sectsty}
+\usepackage{float}
 \definecolor{mycolor}{HTML}{0059b3}
 \definecolor{mycolor2}{HTML}{0066cc}
 \sectionfont{\color{mycolor}}
@@ -169,7 +170,7 @@ Additional results can be found in the project's website \cite{projectwebsite}.
 \section*{Sentiment Analysis}
 The predictions of the sentiments of the tweets are presented using a pie chart in \ref{fig:pie_chart}. The number of tweets that corresponds to each sentiment is presented in Table \ref{tab:sentis}.
 
-\begin{table}[h!]
+\begin{table}[H]
 	\centering	
 	\begin{tabular}{ccc}
 		\toprule
@@ -184,7 +185,7 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 	\label{tab:sentis}
 \end{table}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.6]{pie_chart}
 	\caption{Percentages of negative and positive tweets.}
@@ -192,7 +193,25 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 \end{figure}
 
 \section*{Location Prediction}
+The chosen type of statistics for presenting the results for Geoprediction experiments is the bar plot. The first chart represents the top referenced locations. The second one the top 20 locations for our experiments. The last bar chart depicts the accuracies of the models for every dataset. The metric for the evaluation of our implementation is the accuracy. The best accuracy was achieved by the second dataset, in which the number of users and the number of cities are less(15 for cities and 15 for users/city) than any other case.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.5]{toplocations.png}
+	\caption{Most frequent locations}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.5]{top20cities.png}
+	\caption{Top 20 selected locations}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.5]{accuracies.png}
+	\caption{Accuracies of the datasets}
+\end{figure}
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
