@@ -6,7 +6,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{kpfonts}
- \usepackage{url}
+\usepackage{url}
+\usepackage[cc]{titlepic} 
 \usepackage[explicit]{titlesec}
 \usepackage{xcolor}
 \usepackage{sectsty}
@@ -36,6 +37,7 @@
 \titlespacing*{\chapter}{0pt}{50pt}{-60pt}
 
 \title{\color{mycolor}Report on Twitter topic detection and analysis}
+\titlepic{\includegraphics[width=\textwidth]{twitter3.jpg}}
 \author{
 Alex Tsilingiris \\
 Christina Pardalidou \\
@@ -70,7 +72,7 @@ For the prediction of the sentiments of the tweets gathered, we used a supervise
 All the tweets related to the top emerging event were isolated and written to different text files. These are all the tweets that include hashtags related to the event (e.g \#parisagreement). All the retweets  were removed. 
 
 \subsubsection*{Sentiment Prediction}
-The Opinion-Mining tool\cite{opinion} we used implements a SVM classifier that classifies the tweets in two categories: positive and negative. SVM performs very well and is considered as one of the top performing classifiers in the literature. This tool is further presented in \autoref{chap:framework}.
+The Opinion-Mining tool\cite{opinion} we used implements a SVM classifier that classifies the tweets into two categories: positive and negative. SVM performs very well and is considered as one of the top performing classifiers in the literature. This tool is further presented in \autoref{chap:framework}.
 
 \chapter{Framework description}
 \label{chap:framework}
@@ -169,7 +171,8 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 \end{figure}
 
 
-\addcontentsline{toc}{chapter}{5\:\:\: Bibliography}
+
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
+\addcontentsline{toc}{chapter}{Bibliography}
 \end{document}
