@@ -128,7 +128,7 @@ The model uses a SVM classifier with SGD tuning for prediction. The vectors are 
 \begin{enumerate}
 	\item Tokenization: Collect the tweets of every user and create a list of tokens for each user.
 	\item Stopwords removal.
-	\item Frequencies calculation: The most frequent word is given as a prediction. The algorithm also counts words that are included in hashtags (e.g paris in \#prayforparis).
+	\item Frequencies calculation: The most frequent word is given as a prediction. The algorithm also counts locations that are included in other words (e.g. paris in \#prayforparis).
 \end{enumerate}
 
 \chapter{Results}
@@ -194,24 +194,27 @@ The predictions of the sentiments of the tweets are presented using a pie chart 
 \end{figure}
 
 \section*{Location Prediction}
-The chosen representation type for the results of Geoprediction experiments is the bar plot. The first chart represents the top referenced locations. The second one the top 20 locations for our experiments. The last bar chart depicts the accuracies of the models for every dataset. The metric used for the evaluation of our implementation is accuracy. The highest accuracy was achieved by the second dataset, in which the number of users and the number of cities is smaller (i.e 15 for cities and 15 for users/city) than in any other case.
+The chosen representation type for the results of Geoprediction experiments is the bar plot. The \ref{allCities} bar chart represents the top referenced locations. The \ref{top20} chart presents the top 20 locations we used for our experiments. These cities are the set of our prediction choices for our models. The \ref{accuracies} bar chart depicts the accuracies of the models for every dataset. The metric used for the evaluation of our implementation is accuracy. The highest accuracy was achieved by the second dataset, in which the number of users and the number of cities is smaller (i.e 15 for cities and 15 for users/city) than in any other case.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.5]{toplocations.png}
 	\caption{Most frequent locations}
+	\label{allCities}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.5]{top20cities.png}
 	\caption{Top 20 selected locations}
+	\label{top20}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.5]{accuracies.png}
 	\caption{Accuracies of the datasets}
+	\label{accuracies}
 \end{figure}
 
 \bibliographystyle{abbrv}
