@@ -52,9 +52,9 @@ Sotiris Karapostolakis \\
 \tableofcontents
 \endgroup
 \chapter{Introduction}
-To keimeno sth sinexeia einai mia texniki anafora tou tade project to opoio ekane auta k auta me vash auta. stoxos itan auto k auto kai gia tin diekpaireosh tou egine auto k auto.
-
+This technical report as detailed below describes the implementation of a project regarding twitter topic detection and analysis. The main goal was (a) the detection of emerging events from a collected dataset crawled from twitter live streaming, (b) the extraction of sentiments concerning the top emerging event and (c) specifying the users' geolocation  that were tweeting about this event. These were achieved using methodologies and techniques that are found in the literature. Hence,  \autoref{chap:method} presents the implementation details for every topic, \autoref{chap:framework} describes the framework in a more technical manner and \autoref{chap:results} depicts the results.
 \chapter{Method implementation details}
+\label{chap:method}
 \section*{Event detection}
 \subsection*{Our approach}
 A combination of approaches was used for event detection: Since the dataset was static and filtered based on a query (in our case the word "trump"), terms were considered as living organisms in the given timespan, allowing us to sample a set of tweets as when each term was "most alive", while combining user reputation metrics to select a tweet from a reputable source.
@@ -132,6 +132,7 @@ The model uses a SVM classifier with SGD tuning for prediction. The vectors are 
 \end{enumerate}
 
 \chapter{Results}
+\label{chap:results}
 \section*{Event detection}
 Some top ranked terms (hashtags), their occurrences and the tweet that qualified as an event by our system will be presented in table \ref{tab:tftags}
 
